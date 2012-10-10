@@ -12,13 +12,28 @@
     </style>
 
   <body>
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="../bootstrap/js/bootstrap.min.js"></script>  
-	
+    <script src="../jquery/jquery-1.7.1.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+
+    <script>
+      $(function() {
+        $("a.details").on("click", function() {
+          $.get(
+            $(this).attr("href"),
+            function (h) {
+              $("#talk-content").html(h)
+            }
+          );
+          return false;
+        });
+      });
+    </script>
+
+
     <div class="navbar navbar-inverse navbar-static-top">
       <div class="navbar-inner">
         <div class="container">
-		<a class="brand" href="../index.html">WAJUG</a>
+      		<a class="brand" href="../index.html">WAJUG</a>
           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -34,58 +49,63 @@
       </div>
     </div>
 
-		
+
  	<div class="container" style="padding-top: 80px">
 		<h1>Upcoming Events</h1>
 		<p>Here's the agenda for our next events.<br/>
-			Check this page regularly for updates.</p> 
-		<table class="table table-striped">
-			<thead>
-			<tr>
-				<th>Date</th>
-				<th>Subject</th>
-				<th>Speaker</th>
-				<th>Location</th>
-				<th></th>
-			</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Jan 2013</td>
-					<td>Introduction to functional programming using Scala</td>
-					<td>Andy Petrella</td>
-					<td>TBA</td>
-					<!--
-					<td>
-						<a href="details.html">
-							<button class="btn btn-primary">
-								Details
-								<i class="icon-play icon-white"></i>
-							</button>
-						</a>
-					</td>
-					-->
-				</tr>
-				<tr>
-					<td>Feb 2013</td>
-					<td>Lessons learned from scaling Agile to distributed, offshore teams</td>
-					<td>Stephane Rondal</td>
-					<td>TBA</td>
-					<!--
-					<td>
-						<a href="details.html">
-							<button class="btn btn-primary">
-								Details
-								<i class="icon-play icon-white"></i>
-							</button>
-						</a>
-					</td>
-					-->
-				</tr>
-			</tbody>
-		</table>
+			Check this page regularly for updates.</p>
+    <div class="row">
+      <div class="span6">
+    		<table class="table table-striped table-condensed">
+    			<thead>
+    			<tr>
+    				<th>Date</th>
+    				<th>Subject</th>
+    				<th>Speaker</th>
+    				<th>Location</th>
+    				<th></th>
+    			</tr>
+    			</thead>
+    			<tbody>
+    				<tr>
+    					<td>Jan 2013</td>
+    					<td>Introduction to functional programming using Scala</td>
+    					<td>Andy Petrella</td>
+    					<td>TBA</td>
+    					<td>
+    						<a class="details" href="../talks/details-1.html">
+    							<button class="btn btn-primary btn-block btn-mini" style="max-height: 30px;min-width: 60px;">
+    								Details
+    								<i class="icon-play icon-white"></i>
+    							</button>
+    						</a>
+    					</td>
+    				</tr>
+    				<tr>
+    					<td>Feb 2013</td>
+    					<td>Lessons learned from scaling Agile to distributed, offshore teams</td>
+    					<td>Stephane Rondal</td>
+    					<td>TBA</td>
+    					<td>
+                <a class="details" href="../talks/details-2.html">
+    							<button class="btn btn-primary btn-block  btn-mini" style="max-height: 30px;min-width: 60px;">
+    								Details
+    								<span class="icon-play icon-white"></span>
+    							</button>
+    						</a>
+    					</td>
+    				</tr>
+    			</tbody>
+    		</table>
+      </div>
+      <div class="span6">
+        <div id="talk-content">
+            DESC GEOS HERE !!!
+        </div>
+      </div>
+    </div>
 		<p>Stay tuned, more events to be announced...</p>
-	</div>
+  </div>
   </body>
 
 
