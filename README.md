@@ -4,7 +4,7 @@ WAJUG is your local, Walloon, user group related to "all things software develop
 All this in a fun, friendly and open way, characteristic from the Walloon folks. 
 
 Check it out:
-* Website: http://www.wajub.be
+* Website: http://www.wajug.be
 * Facebook: https://www.facebook.com/pages/WaJug/365099796891111
 * Twitter: http://twitter.com/wajug
 
