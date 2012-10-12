@@ -8,5 +8,5 @@ Check it out:
 * Facebook: https://www.facebook.com/pages/WaJug/365099796891111
 * Twitter: http://twitter.com/wajug
 
-And of course, we're on github? We store the HTML source code of the wajug.be website here.
+And of course, we're on github! We store the HTML source code of the wajug.be website here.
 Feel free to contribute to the website by becoming a comitter.
