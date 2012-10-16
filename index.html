@@ -11,19 +11,64 @@
     <meta name="author" content="Andy Petrella" />
     <!-- Le styles -->
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" />
+
+    <link href="assets/xing-wysihtml5/stylesheet.css" rel="stylesheet" />
+
     <style type="text/css">
       body {
-      padding-top: 60px;
-      padding-bottom: 40px;
+        padding-top: 60px;
+        padding-bottom: 40px;
       }
       #logo {
-      position: relative;
-      top: -80px;
-      left: -80px;
+        position: relative;
+        top: -80px;
+        left: -80px;
       }
+
+      #toolbar,
+      textarea {
+        -webkit-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+      #toolbar textarea {
+        border: 2px solid green;
+        font-family: Verdana;
+        font-size: 11px;
+      }
+
+      #toolbar textarea:focus {
+        color: black;
+        border: 2px solid black;
+      }
+
+      .wysihtml5-command-active {
+        font-weight: bold;
+      }
+
+      [data-wysihtml5-dialog] {
+        margin: 5px 0 0;
+        padding: 5px;
+        border: 1px solid #666;
+      }
+
+      a[data-wysihtml5-command-value="red"] {
+        color: red;
+      }
+
+      a[data-wysihtml5-command-value="green"] {
+        color: green;
+      }
+
+      a[data-wysihtml5-command-value="blue"] {
+        color: blue;
+      }
+
     </style>
-    <link href="assets/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" />
-    <link rel="shortcut icon" href="favicon.ico" />
+
     <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="./Wajug-red-fav.png" />
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./Wajug-red-fav.png" />
@@ -31,21 +76,79 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./Wajug-red-fav.png" />
     <link rel="apple-touch-icon-precomposed" href="./Wajug-red-fav.png" />
   <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <script id="toolbar-template" type="text/template">
+      <div id='edit' style='background-color: lightgray;'>
+        <div id="toolbar" class="btn-toolbar" style="display: none;">
+          <div class="btn-group">
+            <a class="btn btn-mini" data-wysihtml5-command="bold"><b>bold</b></a>
+            <a class="btn btn-mini" data-wysihtml5-command="italic"><i>italic</i></a>
+          </div>
+          <!-- Some wysihtml5 commands require extra parameters -->
+          <div class="btn-group">
+            <a class="btn btn-mini" data-wysihtml5-command="foreColor" data-wysihtml5-command-value="red">red</a>
+            <a class="btn btn-mini" data-wysihtml5-command="foreColor" data-wysihtml5-command-value="green">green</a>
+            <a class="btn btn-mini" data-wysihtml5-command="foreColor" data-wysihtml5-command-value="blue">blue</a>
+          </div>
+          <div class="btn-group">
+            <a class="btn btn-mini" data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h1">h1</a>
+            <a class="btn btn-mini" data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h2">h2</a>
+            <a class="btn btn-mini" data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h3">h3</a>
+            <a class="btn btn-mini" data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h4">h4</a>
+          </div>
+          <div class="btn-group">
+            <a class="btn btn-mini" data-wysihtml5-command="insertUnorderedList">insertUnorderedList</a>
+            <a class="btn btn-mini" data-wysihtml5-command="insertOrderedList">insertOrderedList</a>
+          </div>
+
+          <!-- Some wysihtml5 commands like 'createLink' require extra paramaters specified by the user (eg. href) -->
+          <a class="btn btn-mini" data-wysihtml5-command="createLink"><u>insert link</u></a>
+          <div data-wysihtml5-dialog="createLink" style="display: none;">
+            <label>
+              Link:
+              <input data-wysihtml5-dialog-field="href" value="http://" class="text">
+            </label>
+            <a class="btn btn-mini" data-wysihtml5-dialog-action="save">OK</a> <a class="btn btn-mini" data-wysihtml5-dialog-action="cancel">Cancel</a>
+          </div>
+
+          <div class="btn-group pull-right">
+            <a class="btn btn-mini" data-wysihtml5-action="change_view">switch to html view</a>
+            <a class="btn btn-mini" data-wysihtml5-action="process">process</a>
+            <a class="btn btn-mini" data-wysihtml5-action="close">close</a>
+          </div>
+        </div>
+        <form>
+          <textarea id='editor' placeholder='Enter your text ...' autofocus></textarea>
+        </form>
+      </div>
+    </script>
+
+
+
+    <div class="modal" id="showMsg" tabindex="-1" role="dialog" aria-labelledby="showMsgLabel" aria-hidden="true" style="display:none;">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="showMsgLabel">Message Processed for property <span style="font-weight:bolder;color:darkGray;"></span></h3>
+      </div>
+      <div class="modal-body">
+        <textarea style="width: 100%"></textarea>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+      </div>
+    </div>
+
+
+
+    <div id="navbar" class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          </a>
           <a class="brand" href="index.html">WAJUG</a>
           <div class="nav-collapse collapse">
             <ul class="nav pull-right">
-              <li class="active"><a href="/" data-msg="index.menu.home"></a></li>
+              <li class="active"><a href="#" data-msg="index.menu.home"></a></li>
               <li><a href="#events" data-msg="index.menu.events"></a></li>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span data-msg="index.menu.lgg"></span> <b class="caret"></b></a>
+                <a class="dropdown-toggle" data-toggle="dropdown"><span data-msg="index.menu.lgg"></span> <b class="caret"></b></a>
                 <ul class="dropdown-menu">
                   <li><a href="#en">English</a></li>
                   <li><a href="#fr">Français</a></li>
@@ -59,75 +162,20 @@
     </div>
     <div class="container">
       <div id="main">
-        <!-- Main hero unit for a primary marketing message or call to action -->
-        <div class="hero-unit">
-          <img alt="Wajug Logo" id="logo" src="assets/images/W.logo.red.png" />
-          <p style="margin-top: 20px" data-msg="index.content.moto">
 
-          <p>
-            <!-- TODO   <a class="btn btn-primary btn-large">Learn more »</a></p> -->
-        </div>
-        <!-- Example row of columns -->
-        <div class="row">
-          <div class="span3">
-            <h2 data-msg="index.jargons.header"></h2>
-            <p data-msg="index.jargons.title"></p>
-            <ul data-msg="index.jargons.list">
-            </ul>
-            <!-- <p><a class="btn" href="http://twitter.github.com/bootstrap/examples/hero.html#">View details »</a></p> -->
-          </div>
-          <div class="span3">
-            <h2 data-msg="index.agile.header"></h2>
-            <p data-msg="index.agile.title"></p>
-            <ul data-msg="index.agile.list">
-            </ul>
-            <!-- <p><a class="btn" href="http://twitter.github.com/bootstrap/examples/hero.html#">View details »</a></p> -->
-          </div>
-          <div class="span3">
-            <div class="row">
-              <div class="span3">
-                <h2 data-msg="index.platforms.header"></h2>
-                <p data-msg="index.platforms.title"></p>
-                <ul data-msg="index.platforms.list">
-                </ul>
-                <!-- <p><a class="btn" href="http://twitter.github.com/bootstrap/examples/hero.html#">View details »</a></p> -->
-              </div>
-              <div class="span3">
-                <h2 data-msg="index.tooling.header"></h2>
-                <p data-msg="index.tooling.title"></p>
-                <ul data-msg="index.tooling.list">
-                </ul>
-                </p>
-                <!-- <p><a class="btn" href="http://twitter.github.com/bootstrap/examples/hero.html#">View details »</a></p> -->
-              </div>
-            </div>
-          </div>
-          <div class="span3">
-            <h2 data-msg="index.yourstuff.header"></h2>
-            <div data-msg="index.yourstuff.content">
-            </div>
-          </div>
-          <!-- <p><a class="btn" href="http://twitter.github.com/bootstrap/examples/hero.html#">View details »</a></p> -->
-        </div>
-        <div class="well">
-          <div>
-            <p data-msg="index.gather.header"></p>
-            <ul data-msg="index.gather.content">
-            </ul>
-          </div>
-        </div>
       </div>
       <hr />
       <footer>
         <p data-msg="index.footer.copy"></p>
       </footer>
     </div>
-    <!-- /container -->
-    <!-- Le javascript
-      ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+
     <script src="assets/jquery/jquery-1.7.1.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="assets/xing-wysihtml5/advanced.js"></script>
+    <script src="assets/xing-wysihtml5/wysihtml5-0.3.0.min.js"></script>
+
     <script src="assets/messages/messages.js"></script>
     <script src="assets/messages/en.js"></script>
     <script src="assets/messages/fr.js"></script>
