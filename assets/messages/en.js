@@ -32,6 +32,15 @@ properties["index.yourstuff.content"] = '<p>But WAJUG is more than this.<br />It
 properties["index.gather.header"] = 'Interested? Great! Here\'s what you can do:';
 properties["index.gather.content"] = '<li>Attend our next events. We\'ll be announcing the agenda as soon as we have enough people.</li> <li>Follow us on <a href="http://twitter.com/wajug">Twitter</a> and <a href="https://www.facebook.com/pages/WaJug/365099796891111">Facebook</a>.</li> <li>Spread the word around you, recommend WAJUG to your friends and colleagues.</li> <li>And if you dare to help, we\'re looking for sponsors/partners and meeting rooms in and around Liege.</li>';
 
+properties["index.sponsors.title"] = 'Our Sponsors';
+
+
+
+properties["sponsors.nextlab.description"] = 'NextLab is ...';
+properties["sponsors.nextlab.link"] = '<a href="http://nextlab.be">NextLab</a>';
+properties["sponsors.arexo.description"] = 'Arexo is ...';
+properties["sponsors.arexo.link"] = '<a href="http://arexo.be">Arexo</a>';
+
 
 
 properties["events.title"] = 'Upcoming Events';

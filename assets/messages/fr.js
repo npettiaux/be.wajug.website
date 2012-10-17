@@ -32,6 +32,15 @@ properties["index.yourstuff.content"] = '<p>Mais WAJUG est bien plus que tout ce
 properties["index.gather.header"] = 'Interessé? Génial! Voici ce que vous pouvez faire:';
 properties["index.gather.content"] = '<li>Venez à nos prochaines sessions. Le programme sera annoncé dès que nous aurons suffisement de monde.</li><li>Suivez-nous sur <a href="http://twitter.com/wajug">Twitter</a> et sur<a href="https://www.facebook.com/pages/WaJug/365099796891111">Facebook</a>.</li><li>Faites passer le message, parlez de WAJUG à vos amis et à vos collègues.</li><li>Et si vous êtes pret à aider, nous recherchons des sponsors/partenaires,ainsi que des salles de réunions sur Liège et alentours.</li>';
 
+properties["index.sponsors.title"] = 'Nos Sponsors';
+
+
+
+properties["sponsors.nextlab.description"] = 'NextLab est ...';
+properties["sponsors.nextlab.link"] = '<a href="http://nextlab.be">NextLab</a>';
+properties["sponsors.arexo.description"] = 'Arexo est ...';
+properties["sponsors.arexo.link"] = '<a href="http://arexo.be">Arexo</a>';
+
 
 
 properties["events.title"] = 'Prochaines Sessions';

@@ -96,5 +96,25 @@ $(function() {
       return false;
   });
 
+  $doc.on("click", '.sponsorFlip', function(){
+    // $(this) point to the clicked .sponsorFlip element (caching it in elem for speed):
+    var elem = $(this);
+    if(elem.data('flipped'))
+    {
+      elem.revertFlip();
+      elem.data('flipped',false)
+    }
+    else
+    {
+      elem.flip({
+        direction:'lr',
+        speed: 350,
+        onBefore: function(){
+          elem.html(elem.siblings('.sponsorData').html());
+        }
+      });
+      elem.data('flipped',true);
+    }
+  });
 
 });
