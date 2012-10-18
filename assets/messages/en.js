@@ -38,8 +38,8 @@ properties["index.sponsors.title"] = 'Our Sponsors';
 
 properties["sponsors.nextlab.description"] = 'NextLab is ...';
 properties["sponsors.nextlab.link"] = '<a href="http://nextlab.be">NextLab</a>';
-properties["sponsors.arexo.description"] = 'Arexo is ...';
-properties["sponsors.arexo.link"] = '<a href="http://arexo.be">Arexo</a>';
+properties["sponsors.arexo.description"] = 'Your ICT consulting company';
+properties["sponsors.arexo.link"] = '<a href="http://arexo.be">www.arexo.be</a>';
 
 
 
