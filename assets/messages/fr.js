@@ -83,8 +83,9 @@ properties["events.srondal.agile_distributed.subtitle"] = '';
 properties["events.srondal.agile_distributed.synopsis"] = 'Les détails de cette présentation sont en cours d\'élaboration, ils seront publiés prochainement.';
 properties["events.srondal.agile_distributed.where_when"] = '<p>Mercredi 27 février 2013<br>Liège ou aux alentours, l\'emplacement exact vous sera communiqué ultérieurement.<br><i>Nous sommes toujours à la recherche d\'une salle de réunion. Si vous souhaitez nous accueillir au sein de votre entreprise, n\'hésitez pas à nous contacter: <a rel="nofollow" target="_blank">info@wajug.be</a></i></p>';
 
-properties["mission.title"] = "Mission & Valeurs"
-properties["mission.statement"] = "Notre mission est de ..."
+properties["mission.title"] = "Mission & Valeurs";
+properties["mission.statement"] = "Les membres de WAJUG mangent, prient, vivent et meurent pour les règles suivantes.<br/>Non, c'est pour rire  ;-) mais voici un ensemble de lignes directrices et de valeurs auxquels nous adhérons.";
+properties["mission.statement.items"] = "<ul> <li>Former un groupe de personnes qui partagent les mêmes affinités avec le programme proposé./li> <li>Fournir gratuitement ou à bas prix des activités aux membres de WAJUG, tels que présentations techniques, réunions, etc.</li> <li>Développer et maintenir des partenariats avec les sociétés.</li> <li>Développer des projets, en les rendant disponible à la communauté.</li> <li>Aider des organisations caritatives.</li> <li>Aider à disseminer des propositions d'emploi, de mission et/ou de stage </li> </ul>";
 
 properties["index.footer.copy"] = "© WAJUG 2012. Tous droits réservés";
 
