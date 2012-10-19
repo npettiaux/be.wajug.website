@@ -5,7 +5,7 @@ window.wajug.messages = window.wajug.messages || {}
 var properties = {};
 properties["index.menu.home"] = "Accueil";
 properties["index.menu.events"] = "Événements";
-properties["index.menu.mission"] = "Mision";
+properties["index.menu.mission"] = "Mission";
 
 properties["index.menu.lgg"] = "Choisissez votre langue";
 
