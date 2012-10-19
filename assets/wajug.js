@@ -42,6 +42,16 @@ $(function() {
     $(this).parent().toggleClass("active");
   });
 
+  $('[href="#mission"]').click(function() {
+    $.get("mission.html", function(h) {
+      $("#main").html(h);
+      $doc.trigger("lgg.change");
+      $("a.details:first").click();
+    });
+    $("#navbar .active").toggleClass("active");
+    $(this).parent().toggleClass("active");
+  });
+
   $doc.on("dblclick", "[data-msg]", function(event) {
     if (event.ctrlKey) {
       $doc.trigger("edit", "[data-msg='"+$(this).data("msg")+"']");
