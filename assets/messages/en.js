@@ -85,11 +85,10 @@ properties["events.srondal.agile_distributed.subtitle"] = '';
 properties["events.srondal.agile_distributed.synopsis"] = '<p>Details to be announced soon...</p>';
 properties["events.srondal.agile_distributed.where_when"] = '<p>Wednesday, 27 February 2013<br/>Liege or nearby, exact location will be announced later.<br/><i>We\'re still looking for a meeting room? Anyone interested in hosting this event at his company? If so, please contact us at <a href="mailto:info@wajug.be">info@wajug.be</a></i></p>';
 
-properties["mission.title"] = "Mission & Values"
-properties["mission.statement"] = "Our mission is to..."
+properties["mission.title"] = "Mission & Values";
+properties["mission.statement"] = "WAJUG members eat, pray, live and die by the following rules.<br/>No, just kidding ;-) but here are a set of guidelines and values we try to adhere to.";
+properties["mission.statement.items"] = "<ul> <li>To form a group of people who share the same affinity with the proposed program.</li> <li>To provide free to low-cost ativities to WAJUG members, taking various forms such as technical presentations, gatherings, etc.</li> <li>To develop and maintain partnership with companies.</li> <li>To develop some projects, making them available to the community.</li> <li>To help some charities.</li> <li>To help disseminate employment, contracting and/or internship opportunities.</li> </ul>";
 
 properties["index.footer.copy"] = "© WAJUG 2012. All rights reserved";
-
-
 
 $(properties).messages(window.wajug.messages, "en");
