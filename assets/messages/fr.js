@@ -85,7 +85,7 @@ properties["events.srondal.agile_distributed.where_when"] = '<p>Mercredi 27 fév
 
 properties["mission.title"] = "Mission & Valeurs";
 properties["mission.statement"] = "Les membres de WAJUG mangent, prient, vivent et meurent pour les règles suivantes.<br/>Non, c'est pour rire  ;-) mais voici un ensemble de lignes directrices et de valeurs auxquels nous adhérons.";
-properties["mission.statement.items"] = "<ul> <li>Former un groupe de personnes qui partagent les mêmes affinités avec le programme proposé./li> <li>Fournir gratuitement ou à bas prix des activités aux membres de WAJUG, tels que présentations techniques, réunions, etc.</li> <li>Développer et maintenir des partenariats avec les sociétés.</li> <li>Développer des projets, en les rendant disponible à la communauté.</li> <li>Aider des organisations caritatives.</li> <li>Aider à disseminer des propositions d'emploi, de mission et/ou de stage </li> </ul>";
+properties["mission.statement.items"] = "<ul> <li>Former un groupe de personnes qui partagent les mêmes affinités avec le programme proposé.</li> <li>Fournir gratuitement ou à bas prix des activités aux membres de WAJUG, tels que présentations techniques, réunions, etc.</li> <li>Développer et maintenir des partenariats avec des sociétés.</li> <li>Développer des projets, en les rendant disponible à la communauté.</li> <li>Aider des organisations caritatives.</li> <li>Aider à disseminer des propositions d'emploi, de mission et/ou de stage </li> </ul>";
 
 properties["index.footer.copy"] = "© WAJUG 2012. Tous droits réservés";
 
