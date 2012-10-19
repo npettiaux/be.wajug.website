@@ -5,6 +5,7 @@ window.wajug.messages = window.wajug.messages || {}
 var properties = {};
 properties["index.menu.home"] = "Accueil";
 properties["index.menu.events"] = "Événements";
+properties["index.menu.mission"] = "Mision";
 
 properties["index.menu.lgg"] = "Choisissez votre langue";
 
@@ -82,6 +83,8 @@ properties["events.srondal.agile_distributed.subtitle"] = '';
 properties["events.srondal.agile_distributed.synopsis"] = 'Les détails de cette présentation sont en cours d\'élaboration, ils seront publiés prochainement.';
 properties["events.srondal.agile_distributed.where_when"] = '<p>Mercredi 27 février 2013<br>Liège ou aux alentours, l\'emplacement exact vous sera communiqué ultérieurement.<br><i>Nous sommes toujours à la recherche d\'une salle de réunion. Si vous souhaitez nous accueillir au sein de votre entreprise, n\'hésitez pas à nous contacter: <a rel="nofollow" target="_blank">info@wajug.be</a></i></p>';
 
+properties["mission.title"] = "Mission & Valeurs"
+properties["mission.statement"] = "Notre mission est de ..."
 
 properties["index.footer.copy"] = "© WAJUG 2012. Tous droits réservés";
 

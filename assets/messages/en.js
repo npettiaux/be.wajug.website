@@ -5,6 +5,8 @@ window.wajug.messages = window.wajug.messages || {}
 var properties = {};
 properties["index.menu.home"] = "Home";
 properties["index.menu.events"] = "Events";
+properties["index.menu.mission"] = "Mision";
+
 
 properties["index.menu.lgg"] = "Choose your language";
 
@@ -83,6 +85,8 @@ properties["events.srondal.agile_distributed.subtitle"] = '';
 properties["events.srondal.agile_distributed.synopsis"] = '<p>Details to be announced soon...</p>';
 properties["events.srondal.agile_distributed.where_when"] = '<p>Wednesday, 27 February 2013<br/>Liege or nearby, exact location will be announced later.<br/><i>We\'re still looking for a meeting room? Anyone interested in hosting this event at his company? If so, please contact us at <a href="mailto:info@wajug.be">info@wajug.be</a></i></p>';
 
+properties["mission.title"] = "Mission & Values"
+properties["mission.statement"] = "Our mission is to..."
 
 properties["index.footer.copy"] = "© WAJUG 2012. All rights reserved";
 
