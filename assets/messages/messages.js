@@ -12,6 +12,7 @@
           cont = cont[elt];
         //}
       });
+      value = $("."+lgg+"[data-msg-value='"+key+"']").html() || value;
       cont[lgg] = value;
       result.__path__ = result.__path__ || {};
       result.__path__[key] = result.__path__[key] || {};
