@@ -160,7 +160,65 @@ body:before {/* thanks to Maleika (Kohoutec)*/
   margin-top:-32767px;/* thank you Erik J - negate effect of float*/
 }
 
+.affix ul {
+  margin: 1%;
+}
 
+
+.ribbon {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border: 0px;
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+  .social {
+    width: 48px;
+    height: 48px;
+  }
+  .social.speaker {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  .social {
+    width: 32px;
+    height: 32px;
+  }
+  .social.speaker {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .social {
+    width: 24px;
+    height: 24px;
+  }
+  .social.speaker {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .social {
+    width: 16px;
+    height: 16px;
+  }
+  .social.speaker {
+    width: 4px;
+    height: 4px;
+  }
+}
 
 /* IMPORTANT
   You also need to include this conditional style in the <head> of your HTML file to feed this style to IE 6 and lower and 8 and higher.

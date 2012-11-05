@@ -127,4 +127,11 @@ $(function() {
     }
   });
 
+
+  var navbar = $("#navbar");
+  $(".ribbon").css("top", navbar.offset().top + navbar.height());
+  $(window).resize(function() {
+    $(".ribbon").css("top", navbar.offset().top + navbar.height())
+  });
+
 });
