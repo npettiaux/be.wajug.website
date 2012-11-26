@@ -50,12 +50,12 @@ properties["events.table.header.date"] = 'Date';
 properties["events.table.header.subject"] = 'Sujet';
 properties["events.table.header.speaker"] = 'Présentateur';
 properties["events.table.header.location"] = 'Lieu';
-properties["events.table.content[0].date"] = '17/01/2013';
+properties["events.table.content[0].date"] = '17/01/2013 19h00';
 properties["events.table.content[0].subject"] = 'Introduction à la programmation fonctionelle au travers de Scala';
 properties["events.table.content[0].speaker"] = 'Andy Petrella';
 properties["events.table.content[0].location"] = 'TBA';
 properties["events.button.details"] = 'Détails';
-properties["events.table.content[1].date"] = '27/02/2013';
+properties["events.table.content[1].date"] = '27/02/2013 19h00';
 properties["events.table.content[1].subject"] = 'Agile distribué en équipe offshores: retour d\'expérience';
 properties["events.table.content[1].speaker"] = 'Stephane Rondal';
 properties["events.table.content[1].location"] = 'TBA';
@@ -76,7 +76,7 @@ properties["events.apetrella.about.content"] = '<p>Avant mon mariage et un super
 properties["events.apetrella.scala.title"] = 'Introduction à la programmation fonctionelle au travers de Scala.';
 properties["events.apetrella.scala.subtitle"] = 'Pourquoi ce buzz... en dehors des amphis ?';
 properties["events.apetrella.scala.synopsis"] = '<p>Dans cette présentation, nous allons survoler les concepts fondamentaux de la programmation fonctionnelle, les expressions, immutabilité et consors. A des fins d\'illustrations, nous programmerons cela en live en utilisant Scala.</p> <p>Grâce à cette petite introduction, nous aurons déjà assez d\'informations pour saisir les subtilités garantissant cette qualité dans le monde de la programmation concurrente -- pièce maîtresse de toute application cloud. Une des libraries les plus populaires prenant avantages de ces fonctionnalités glonflées en matière de concurrence est Akka.</p> <p>Mets tout ça dans un serveur web et tu obtiens un genre de Nirvana non-bloquant et hautement réactif -- optimisant la consommation des ressources et capable de monter en charge. En toute logique avec ce qui précède, un démonstration du Play! Framework 2 s\'impose.</p>';
-properties["events.apetrella.scala.where_when"] = '<p>Jeudi 17 janvier 2013<br> Liège ou aux alentours, l\'emplacement exact vous sera communiqué ultérieurement.<br> <i>Nous sommes toujours à la recherche d\'une salle de réunion. Si vous souhaitez nous accueillir au sein de votre entreprise, n\'hésitez pas à nous contacter: <a rel="nofollow" target="_blank">info@wajug.be</a></i> </p>';
+properties["events.apetrella.scala.where_when"] = '<p>Jeudi 17 janvier 2013 @ 19h00 - 21h00<br> Liège ou aux alentours, l\'emplacement exact vous sera communiqué ultérieurement.<br> <i>Nous sommes toujours à la recherche d\'une salle de réunion. Si vous souhaitez nous accueillir au sein de votre entreprise, n\'hésitez pas à nous contacter: <a rel="nofollow" target="_blank">info@wajug.be</a></i> </p>';
 
 
 properties["events.srondal.about.header"] = 'A propos de Stephane';
@@ -85,7 +85,7 @@ properties["events.srondal.about.content"] = '<p>When he\'s not busy with his fa
 properties["events.srondal.agile_distributed.title"] = 'Agile distribué en équipes offshores: retour d\'expérience';
 properties["events.srondal.agile_distributed.subtitle"] = '';
 properties["events.srondal.agile_distributed.synopsis"] = 'Les détails de cette présentation sont en cours d\'élaboration, ils seront publiés prochainement.';
-properties["events.srondal.agile_distributed.where_when"] = '<p>Mercredi 27 février 2013<br>Liège ou aux alentours, l\'emplacement exact vous sera communiqué ultérieurement.<br><i>Nous sommes toujours à la recherche d\'une salle de réunion. Si vous souhaitez nous accueillir au sein de votre entreprise, n\'hésitez pas à nous contacter: <a rel="nofollow" target="_blank">info@wajug.be</a></i></p>';
+properties["events.srondal.agile_distributed.where_when"] = '<p>Mercredi 27 février 2013 @ 19h00 - 21h00<br>Liège ou aux alentours, l\'emplacement exact vous sera communiqué ultérieurement.<br><i>Nous sommes toujours à la recherche d\'une salle de réunion. Si vous souhaitez nous accueillir au sein de votre entreprise, n\'hésitez pas à nous contacter: <a rel="nofollow" target="_blank">info@wajug.be</a></i></p>';
 
 properties["events.ljanssens.about.header"] = 'A propos de Laurent';
 properties["events.ljanssens.about.content"] = '<p>Laurent growed in a bilingual environment (French/Dutch). Quite early, he learned English and since then, he used it on a frequent way. Since 1994, he acts as Mechanical Engineer from the Faculté Polytechnique de Mons. In 1997, he granted a Master in Computer Audit from UAMS (ex IPO) and the CISA. He pursued his curriculum with trainings (several with certifications) on portfolio/programme/project management, Change Management, IT Management, IT governance and Interim Management. Laurent is also member of PMI Belgium, ISACA Belgium and Vlerick Alumini.<br/>During his 17 years professional track, Laurent was assigned to several positions mainly in the IT world, from analyst to auditor or IT director. Since 2004, as management consultant, Laurent succeeded in assignments related on IT governance, project management, process improvement (IT but also Financial or outsourcing), Quality assurance, portfolio management.</p><p>Laurent is used in definition of initiatives roadmap, workshop facilitation, problem solving sessions, training and coaching, implementation of state-of-the art solutions, change management, establishment of metrics, risk management practices, assessments.</p><p>He has been active in different sectors : mainly financial but also insurance, transport, building, manufacturing, service,… And this in small organizations to pan-european ones; from public ones to quoted ones.</p><p>In 2011, based on all its previous experiences, Laurent launched « sustain-IT », with aim to deliver state-of-the-art consulting services on IT sustainability. To achieve this, Laurent is busy developing a framework that may be used at any stage of a sustainability programme.<br/>Laurent should be delighted to provide you more information on his track.</p>';

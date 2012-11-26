@@ -51,12 +51,12 @@ properties["events.table.header.date"] = 'Date';
 properties["events.table.header.subject"] = 'Subject';
 properties["events.table.header.speaker"] = 'Speaker';
 properties["events.table.header.location"] = 'Location';
-properties["events.table.content[0].date"] = '17/01/2013';
+properties["events.table.content[0].date"] = '17/01/2013 19h00';
 properties["events.table.content[0].subject"] = 'Introduction to functional programming using Scala';
 properties["events.table.content[0].speaker"] = 'Andy Petrella';
 properties["events.table.content[0].location"] = 'TBA';
 properties["events.button.details"] = 'Details';
-properties["events.table.content[1].date"] = '27/02/2013';
+properties["events.table.content[1].date"] = '27/02/2013 19h00';
 properties["events.table.content[1].subject"] = 'Lessons learned from scaling Agile to distributed, offshore teams';
 properties["events.table.content[1].speaker"] = 'Stephane Rondal';
 properties["events.table.content[1].location"] = 'TBA';
@@ -78,7 +78,7 @@ properties["events.apetrella.about.content"] = '<p>Before getting married and ha
 properties["events.apetrella.scala.title"] = 'Introduction to functional programming using Scala.';
 properties["events.apetrella.scala.subtitle"] = 'Why does it buzz... in the business industry?';
 properties["events.apetrella.scala.synopsis"] = '<p>In this talk, you\'re gonna have a high level sight on the functional programming paradigm, expressions, immutability and alike. For illustration purpose, we’ll be live coding in Scala.</p> <p>With such quick introduction, you’ll master enough to catch its worth in the concurrency world -- an essential piece of any cloud application. One of the most popular library to take advantage of this beefed up concurrency power is probably Akka. </p><p>Drop da things in a web server, and you’ll reach a kind-of Nirvana having a non-blocking and highly responsive and scalable component -- minimizing the resource consumption. </p> A logical continuation will be  the demonstration of the Play! Framework 2.<p></p>';
-properties["events.apetrella.scala.where_when"] = '<p>Thursday, 17 January 2013<br> Liege or nearby, exact location will be announced later.<br> <i>We\'re still looking for a meeting room? Anyone interested in hosting this event at his company? If so, please contact us at <a rel="nofollow" target="_blank">info@wajug.be</a></i> </p>';
+properties["events.apetrella.scala.where_when"] = '<p>Thursday, 17 January 2013 @ 19h00 - 21h00<br> Liege or nearby, exact location will be announced later.<br> <i>We\'re still looking for a meeting room? Anyone interested in hosting this event at his company? If so, please contact us at <a rel="nofollow" target="_blank">info@wajug.be</a></i> </p>';
 
 
 properties["events.srondal.about.header"] = 'About Stephane';
@@ -87,7 +87,7 @@ properties["events.srondal.about.content"] = '<p>When he\'s not busy with his fa
 properties["events.srondal.agile_distributed.title"] = 'Lessons learned from scaling Agile to distributed, offshore teams.';
 properties["events.srondal.agile_distributed.subtitle"] = '';
 properties["events.srondal.agile_distributed.synopsis"] = '<p>Details to be announced soon...</p>';
-properties["events.srondal.agile_distributed.where_when"] = '<p>Wednesday, 27 February 2013<br/>Liege or nearby, exact location will be announced later.<br/><i>We\'re still looking for a meeting room? Anyone interested in hosting this event at his company? If so, please contact us at <a href="mailto:info@wajug.be">info@wajug.be</a></i></p>';
+properties["events.srondal.agile_distributed.where_when"] = '<p>Wednesday, 27 February 2013 @ 19h00 - 21h00<br/>Liege or nearby, exact location will be announced later.<br/><i>We\'re still looking for a meeting room? Anyone interested in hosting this event at his company? If so, please contact us at <a href="mailto:info@wajug.be">info@wajug.be</a></i></p>';
 
 properties["events.ljanssens.about.header"] = 'About Laurent';
 properties["events.ljanssens.about.content"] = '<p>Laurent growed in a bilingual environment (French/Dutch). Quite early, he learned English and since then, he used it on a frequent way. Since 1994, he acts as Mechanical Engineer from the Faculté Polytechnique de Mons. In 1997, he granted a Master in Computer Audit from UAMS (ex IPO) and the CISA. He pursued his curriculum with trainings (several with certifications) on portfolio/programme/project management, Change Management, IT Management, IT governance and Interim Management. Laurent is also member of PMI Belgium, ISACA Belgium and Vlerick Alumini.<br/>During his 17 years professional track, Laurent was assigned to several positions mainly in the IT world, from analyst to auditor or IT director. Since 2004, as management consultant, Laurent succeeded in assignments related on IT governance, project management, process improvement (IT but also Financial or outsourcing), Quality assurance, portfolio management.</p><p>Laurent is used in definition of initiatives roadmap, workshop facilitation, problem solving sessions, training and coaching, implementation of state-of-the art solutions, change management, establishment of metrics, risk management practices, assessments.</p><p>He has been active in different sectors : mainly financial but also insurance, transport, building, manufacturing, service,… And this in small organizations to pan-european ones; from public ones to quoted ones.</p><p>In 2011, based on all its previous experiences, Laurent launched « sustain-IT », with aim to deliver state-of-the-art consulting services on IT sustainability. To achieve this, Laurent is busy developing a framework that may be used at any stage of a sustainability programme.<br/>Laurent should be delighted to provide you more information on his track.</p>';
