@@ -45,7 +45,7 @@ properties["sponsors.arexo.link"] = '<a href="http://arexo.be">www.arexo.be</a>'
 
 
 properties["events.title"] = 'Prochaines Sessions';
-properties["events.subtitle"] = 'Voici l\'agenda de nos prochaines sessions.<br />Revennez régulièrement pour des mises à jour.';
+properties["events.subtitle"] = 'Voici l\'agenda de nos prochaines sessions.<br />Revenez régulièrement sur cette page pour voir les mises à jour.';
 properties["events.table.header.date"] = 'Date';
 properties["events.table.header.subject"] = 'Sujet';
 properties["events.table.header.speaker"] = 'Présentateur';
@@ -59,6 +59,10 @@ properties["events.table.content[1].date"] = '27/02/2013';
 properties["events.table.content[1].subject"] = 'Agile distribué en équipe offshores: retour d\'expérience';
 properties["events.table.content[1].speaker"] = 'Stephane Rondal';
 properties["events.table.content[1].location"] = 'TBA';
+properties["events.table.content[2].date"] = 'TBA';
+properties["events.table.content[2].subject"] = 'Your choice of subject, read more...';
+properties["events.table.content[2].speaker"] = 'Laurent Janssens';
+properties["events.table.content[2].location"] = 'TBA';
 properties["events.stay.tuned"] = 'Restez branché, d\'autres sessions sont encore à venir...';
 
 
@@ -82,6 +86,13 @@ properties["events.srondal.agile_distributed.title"] = 'Agile distribué en équ
 properties["events.srondal.agile_distributed.subtitle"] = '';
 properties["events.srondal.agile_distributed.synopsis"] = 'Les détails de cette présentation sont en cours d\'élaboration, ils seront publiés prochainement.';
 properties["events.srondal.agile_distributed.where_when"] = '<p>Mercredi 27 février 2013<br>Liège ou aux alentours, l\'emplacement exact vous sera communiqué ultérieurement.<br><i>Nous sommes toujours à la recherche d\'une salle de réunion. Si vous souhaitez nous accueillir au sein de votre entreprise, n\'hésitez pas à nous contacter: <a rel="nofollow" target="_blank">info@wajug.be</a></i></p>';
+
+properties["events.ljanssens.about.header"] = 'About Laurent';
+properties["events.ljanssens.about.content"] = '<p>Laurent growed in a bilingual environment (French/Dutch). Quite early, he learned English and since then, he used it on a frequent way. Since 1994, he acts as Mechanical Engineer from the Faculté Polytechnique de Mons. In 1997, he granted a Master in Computer Audit from UAMS (ex IPO) and the CISA. He pursued his curriculum with trainings (several with certifications) on portfolio/programme/project management, Change Management, IT Management, IT governance and Interim Management. Laurent is also member of PMI Belgium, ISACA Belgium and Vlerick Alumini.<br/>During his 17 years professional track, Laurent was assigned to several positions mainly in the IT world, from analyst to auditor or IT director. Since 2004, as management consultant, Laurent succeeded in assignments related on IT governance, project management, process improvement (IT but also Financial or outsourcing), Quality assurance, portfolio management.</p><p>Laurent is used in definition of initiatives roadmap, workshop facilitation, problem solving sessions, training and coaching, implementation of state-of-the art solutions, change management, establishment of metrics, risk management practices, assessments.</p><p>He has been active in different sectors : mainly financial but also insurance, transport, building, manufacturing, service,… And this in small organizations to pan-european ones; from public ones to quoted ones.</p><p>In 2011, based on all its previous experiences, Laurent launched « sustain-IT », with aim to deliver state-of-the-art consulting services on IT sustainability. To achieve this, Laurent is busy developing a framework that may be used at any stage of a sustainability programme.<br/>Laurent should be delighted to provide you more information on his track.</p>';
+properties["events.ljanssens.greenit.title"] = 'Your choice of subject, read more...';
+properties["events.ljanssens.greenit.subtitle"] = '';
+properties["events.ljanssens.greenit.synopsis"] = '<p>Laurent is proposing us several subjects. Help us to choose which one best fits your interests. Just post your favorite subject on <a href="https://www.facebook.com/pages/WaJug/365099796891111">WAJUG Facebook page</a> or on <a href="http://twitter.com/wajug">Twitter</a>.</p><ol><li><em>"Quality Manager: ami ou ennemi des développeurs?"</em><br/>L\'objectif est de présenter qq contrôles en amont ou en aval du développement qui peut aider le développeur dans son travail quotidien...Même si cela reste des activités de contrôle.<br/>&nbsp;</li><li><em>"Mais, c\'est quoi tout ce monde autour/au dessus de moi?"</em><br/>Une introduction/une vulgarisation à la gouvernance IT: le rôle du CIO, le rôle du portfolio mgt, le rôle de l\'architecte, quality manager, etc selon la perspective du développement.<br/>&nbsp;</li><li><em>"Le Green IT pour les nuls" ou "Tout ce que vous avez voulu savoir sur le green IT"?</em><br/>Une approche holostique du green IT. Ujioquement parler de l\'optimisation de l\'infra n\'a pas de sens si d\'autres aspects ne sont pas abordés, comme les pratiques d\'achat, le coding, les Non functional requirements, etc... Comment relier tout cela?</li></ol>';
+properties["events.ljanssens.greenit.where_when"] = '<p>Date to be announced.<br/>Liege or nearby, exact location will be announced later.<br/><i>We\'re still looking for a meeting room? Anyone interested in hosting this event at his company? If so, please contact us at <a href="mailto:info@wajug.be">info@wajug.be</a></i></p>';
 
 properties["mission.title"] = "Mission & Valeurs";
 properties["mission.statement"] = "Les membres de WAJUG mangent, prient, vivent et meurent pour les règles suivantes.<br/>Non, c'est pour rire  ;-) mais voici un ensemble de lignes directrices et de valeurs auxquels nous adhérons.";
