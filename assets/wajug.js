@@ -10,47 +10,72 @@ $(function() {
     });
   });
 
-  $doc.trigger("lgg.change");
+  function updateFragment() {
+    window.location.hash="#"+window.wajug.lgg+"&"+window.wajug.page;
+  }
+
+  $('[href="#fr"]').click(function(event) {
+    window.wajug.lgg = "fr";
+    $doc.trigger("lgg.change");
+    updateFragment();
+    event.preventDefault();
+  });
+  $('[href="#en"]').click(function(event) {
+    window.wajug.lgg = "en";
+    $doc.trigger("lgg.change");
+    updateFragment();
+    event.preventDefault();
+  });
 
   $('[href="#"]').click(function() {
     $.get("home.html", function(h) {
       $("#main").html(h);
       $doc.trigger("lgg.change");
+      window.wajug.page="";
+      updateFragment();
     });
     $("#navbar .active").toggleClass("active");
     $(this).parent().toggleClass("active");
   });
-
-  $('[href="#"]').click();
-
-  $('[href="#fr"]').click(function() {
-    window.wajug.lgg = "fr";
-    $doc.trigger("lgg.change");
-  });
-  $('[href="#en"]').click(function() {
-    window.wajug.lgg = "en";
-    $doc.trigger("lgg.change");
-  });
-
   $('[href="#events"]').click(function() {
     $.get("events/index.html", function(h) {
       $("#main").html(h);
       $doc.trigger("lgg.change");
       $("a.details:first").click();
+      window.wajug.page="events";
+      updateFragment();
     });
     $("#navbar .active").toggleClass("active");
     $(this).parent().toggleClass("active");
   });
-
   $('[href="#mission"]').click(function() {
     $.get("mission.html", function(h) {
       $("#main").html(h);
       $doc.trigger("lgg.change");
       $("a.details:first").click();
+      window.wajug.page="mission";
+      updateFragment();
     });
     $("#navbar .active").toggleClass("active");
     $(this).parent().toggleClass("active");
   });
+
+  var fragments = window.location.hash.substring(1).split("&")
+  if (fragments.length==1 && fragments[0]=="") {
+    fragments = ["fr", ""]
+  }
+  if (fragments.length > 0) {
+    window.wajug.lgg = fragments[0];
+  }
+  if (fragments.length > 1) {
+    window.wajug.page = fragments[1];
+  }
+
+  $doc.trigger("lgg.change");
+  $('[href="#'+window.wajug.page+'"]').click();
+
+
+
 
   $doc.on("dblclick", "[data-msg]", function(event) {
     if (event.ctrlKey) {
