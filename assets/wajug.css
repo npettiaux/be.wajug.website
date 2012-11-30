@@ -186,6 +186,9 @@ body:before {/* thanks to Maleika (Kohoutec)*/
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
+  .navbar .brand {
+    margin: 0 0 0 10px;
+  }
   .social {
     width: 32px;
     height: 32px;
@@ -198,6 +201,9 @@ body:before {/* thanks to Maleika (Kohoutec)*/
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
+  .navbar .brand {
+    margin: 0 0 0 10px;
+  }
   .social {
     width: 24px;
     height: 24px;
@@ -210,6 +216,9 @@ body:before {/* thanks to Maleika (Kohoutec)*/
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
+  .navbar .brand {
+    margin: 0 0 0 10px;
+  }
   .social {
     width: 16px;
     height: 16px;
