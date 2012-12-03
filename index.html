@@ -24,6 +24,17 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./Wajug-red-fav.png" />
     <link rel="apple-touch-icon-precomposed" href="./Wajug-red-fav.png" />
   <body>
+	<!-- facebook initialization --> 
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+	</script>
+
     <script id="toolbar-template" type="text/template">
       <div id='edit' style='background-color: lightgray;'>
         <div id="toolbar" class="btn-toolbar" style="display: none;">
