@@ -34,9 +34,11 @@ properties["index.yourstuff.content"] = '<p>But WAJUG is more than this.<br />It
 properties["index.gather.header"] = 'Interested? Great! Here\'s what you can do:';
 properties["index.gather.content"] = '<li>Attend our next events. Check the <a href="index.html#en&events">events agenda</a>.</li> <li>Follow us on <a href="http://twitter.com/wajug">Twitter</a> and <a href="https://www.facebook.com/pages/WaJug/365099796891111">Facebook</a>.</li> <li>Spread the word around you, recommend WAJUG to your friends and colleagues.</li> <li>And if you dare to help, we\'re looking for sponsors/partners and meeting rooms in and around Liege.</li><li>Finally, for the bravest, have your say about the content of this website, as it is on <a href="https://github.com/wajug">GitHub</a>.</li>';
 
+properties["by"] = 'by';
+properties["coming.soon"] = 'Coming soon...';
+
+
 properties["index.sponsors.title"] = 'Our Partners';
-
-
 
 properties["sponsors.nextlab.description"] = 'More Than IT';
 properties["sponsors.nextlab.link"] = '<a href="http://nextlab.be">http://nextlab.be</a>';
@@ -52,16 +54,16 @@ properties["events.table.header.subject"] = 'Subject';
 properties["events.table.header.speaker"] = 'Speaker';
 properties["events.table.header.location"] = 'Location';
 properties["events.table.content[0].date"] = '17/01/2013 19h00';
-properties["events.table.content[0].subject"] = '<a class="details" href="events/apetrella/scala.html">Introduction to functional programming using Scala</a>';
+properties["events.table.content[0].subject"] = 'Introduction to functional programming using Scala';
 properties["events.table.content[0].speaker"] = 'Andy Petrella';
 properties["events.table.content[0].location"] = 'TBA';
 properties["events.button.details"] = 'Details';
 properties["events.table.content[1].date"] = '27/02/2013 19h00';
-properties["events.table.content[1].subject"] = '<a class="details" href="events/srondal/agile-distributed.html">Lessons learned from scaling Agile to distributed, offshore teams</a>';
+properties["events.table.content[1].subject"] = 'Lessons learned from scaling Agile to distributed, offshore teams';
 properties["events.table.content[1].speaker"] = 'Stephane Rondal';
 properties["events.table.content[1].location"] = 'TBA';
 properties["events.table.content[2].date"] = 'TBA';
-properties["events.table.content[2].subject"] = '<a class="details" href="events/ljanssens/green-it.html">Help us choose a subject: </a><ul><li>Quality Manager: ami ou ennemi...</li><li>Mais, c\'est quoi tout ce monde autour/au dessus de moi?</li><li>Le Green IT pour les nuls</li></ul>';
+properties["events.table.content[2].subject"] = 'Help us choose a subject:<ul><li>Quality Manager: ami ou ennemi...</li><li>Mais, c\'est quoi tout ce monde autour/au dessus de moi?</li><li>Le Green IT pour les nuls</li></ul>';
 properties["events.table.content[2].speaker"] = 'Laurent Janssens';
 properties["events.table.content[2].location"] = 'TBA';
 properties["events.stay.tuned"] = 'Stay tuned, more events to be announced...';
