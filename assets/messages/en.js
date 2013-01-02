@@ -56,7 +56,7 @@ properties["events.table.header.location"] = 'Location';
 properties["events.table.content[0].date"] = '17/01/2013 19h00';
 properties["events.table.content[0].subject"] = 'Introduction to functional programming using Scala';
 properties["events.table.content[0].speaker"] = 'Andy Petrella';
-properties["events.table.content[0].location"] = 'TBA';
+properties["events.table.content[0].location"] = 'WSL, Liege';
 properties["events.button.details"] = 'Details';
 properties["events.table.content[1].date"] = '27/02/2013 19h00';
 properties["events.table.content[1].subject"] = 'Lessons learned from scaling Agile to distributed, offshore teams';
@@ -80,7 +80,7 @@ properties["events.apetrella.about.content"] = '<p>Before getting married and ha
 properties["events.apetrella.scala.title"] = 'Introduction to functional programming using Scala.';
 properties["events.apetrella.scala.subtitle"] = 'Why does it buzz... in the business industry?';
 properties["events.apetrella.scala.synopsis"] = '<p>In this talk, you\'re gonna have a high level sight on the functional programming paradigm, expressions, immutability and alike. For illustration purpose, we’ll be live coding in Scala.</p> <p>With such quick introduction, you’ll master enough to catch its worth in the concurrency world -- an essential piece of any cloud application. One of the most popular library to take advantage of this beefed up concurrency power is probably Akka. </p><p>Drop da things in a web server, and you’ll reach a kind-of Nirvana having a non-blocking and highly responsive and scalable component -- minimizing the resource consumption. </p> A logical continuation will be  the demonstration of the Play! Framework 2.<p></p>';
-properties["events.apetrella.scala.where_when"] = '<p>Thursday, 17 January 2013 @ 19h00 - 21h00<br> Liege or nearby, exact location will be announced later.<br> <i>We\'re still looking for a meeting room? Anyone interested in hosting this event at his company? If so, please contact us at <a rel="nofollow" target="_blank">info@wajug.be</a></i> </p>';
+properties["events.apetrella.scala.where_when"] = '<p>Thursday, 17 January 2013 @ 19h00 - 21h00<br><br>WSL<br>Rue des Chasseurs Ardennais, 3<br>4031 Angleur-Liège<br><a href="http://www.wsl.be/fr/contact">http://www.wsl.be/fr/contact</a></p>';
 
 
 properties["events.srondal.about.header"] = 'About Stephane';
