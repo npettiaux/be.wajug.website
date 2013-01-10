@@ -14,20 +14,20 @@ $(function() {
     window.location.hash="#"+window.wajug.lgg+"&"+window.wajug.page;
   }
 
-  $('[href="#fr"]').click(function(event) {
+  $doc.on('click', '[href="#fr"]', function(event) {
     window.wajug.lgg = "fr";
     $doc.trigger("lgg.change");
     updateFragment();
     event.preventDefault();
   });
-  $('[href="#en"]').click(function(event) {
+  $doc.on('click', '[href="#en"]', function(event) {
     window.wajug.lgg = "en";
     $doc.trigger("lgg.change");
     updateFragment();
     event.preventDefault();
   });
 
-  $('[href="#"]').click(function() {
+  $doc.on('click', '[href="#"]', function() {
     $.get("home.html", function(h) {
       $("#main").html(h);
       $doc.trigger("lgg.change");
@@ -37,7 +37,7 @@ $(function() {
     $("#navbar .active").toggleClass("active");
     $(this).parent().toggleClass("active");
   });
-  $('[href="#events"]').click(function() {
+  $doc.on('click', '[href="#events"]', function() {
     $.get("events/index.html", function(h) {
       $("#main").html(h);
       $doc.trigger("lgg.change");
@@ -48,7 +48,7 @@ $(function() {
     $("#navbar .active").toggleClass("active");
     $(this).parent().toggleClass("active");
   });
-  $('[href="#mission"]').click(function() {
+  $doc.on('click', '[href="#mission"]', function() {
     $.get("mission.html", function(h) {
       $("#main").html(h);
       $doc.trigger("lgg.change");
