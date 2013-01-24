@@ -41,7 +41,7 @@ $(function() {
     $.get("events/index.html", function(h) {
       $("#main").html(h);
       $doc.trigger("lgg.change");
-      $("a.details:first").click();
+      $("a.details.next").click();
       window.wajug.page="events";
       updateFragment();
     });
@@ -52,7 +52,7 @@ $(function() {
     $.get("mission.html", function(h) {
       $("#main").html(h);
       $doc.trigger("lgg.change");
-      $("a.details:first").click();
+      //$("a.details:first").click();
       window.wajug.page="mission";
       updateFragment();
     });

@@ -172,6 +172,10 @@ body:before {/* thanks to Maleika (Kohoutec)*/
   border: 0px;
 }
 
+.done {
+  opacity: 0.5;
+}
+
 /* Large desktop */
 @media (min-width: 1200px) {
   .social {
