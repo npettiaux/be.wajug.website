@@ -42,6 +42,8 @@ properties["sponsors.nextlab.description"] = 'More Than IT';
 properties["sponsors.nextlab.link"] = '<a href="http://nextlab.be">http://nextlab.be</a>';
 properties["sponsors.arexo.description"] = 'Votre société de consultance IT';
 properties["sponsors.arexo.link"] = '<a href="http://arexo.be">www.arexo.be</a>';
+properties["sponsors.devoxxuk.description"] = 'Devoxx UK 2013, London';
+properties["sponsors.devoxxuk.link"] = '<a href="https://reguk.devoxx.com">Register here</a>';
 
 
 

@@ -55,7 +55,7 @@ footer h1 {
 }
 
 #sponsors {
-  width: 376px; /* (180+4+4)*2sponsors*/
+  width: 564px; /* (180+4+4)*2sponsors*/
   margin: auto;
 }
 
@@ -111,13 +111,13 @@ footer h1 {
 }
 
 .sponsorDescription{
-  font-size:11px;
+  font-size:15px;
   padding:50px 10px 20px 20px;
   font-style:italic;
 }
 
 .sponsorURL{
-  font-size:10px;
+  font-size:13px;
   font-weight:bold;
   padding-left:20px;
 }
