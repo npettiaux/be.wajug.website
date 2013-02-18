@@ -62,10 +62,14 @@ properties["events.table.content[1].date"] = '27/02/2013 19h00';
 properties["events.table.content[1].subject"] = 'Lessons learned from scaling Agile to distributed, offshore teams';
 properties["events.table.content[1].speaker"] = 'Stephane Rondal';
 properties["events.table.content[1].location"] = 'La Forge';
-properties["events.table.content[2].date"] = 'TBA';
-properties["events.table.content[2].subject"] = 'Help us choose a subject:<ul><li>Quality Manager: ami ou ennemi...</li><li>Mais, c\'est quoi tout ce monde autour/au dessus de moi?</li><li>Le Green IT pour les nuls</li></ul>';
+properties["events.table.content[2].date"] = '25/03/2013 19h00';
+properties["events.table.content[2].subject"] = 'Green IT for Dummies';
 properties["events.table.content[2].speaker"] = 'Laurent Janssens';
-properties["events.table.content[2].location"] = 'TBA';
+properties["events.table.content[2].location"] = 'Coworking Namur';
+properties["events.table.content[3].date"] = 'TBA';
+properties["events.table.content[3].subject"] = 'TBA';
+properties["events.table.content[3].speaker"] = 'TBA';
+properties["events.table.content[3].location"] = 'TBA';
 properties["events.stay.tuned"] = 'Stay tuned, more events to be announced...';
 
 
@@ -92,11 +96,18 @@ properties["events.srondal.agile_distributed.synopsis"] = '<p>Driving a software
 properties["events.srondal.agile_distributed.where_when"] = '<p>Wednesday, 27 February 2013 @ 19h00 - 21h00<br/>La Forge - Coworking<br/>Rue de la Cathédrale, 58<br/>4000 Liège</p>';
 
 properties["events.ljanssens.about.header"] = 'About Laurent';
-properties["events.ljanssens.about.content"] = '<p>Laurent growed in a bilingual environment (French/Dutch). Quite early, he learned English and since then, he used it on a frequent way. Since 1994, he acts as Mechanical Engineer from the Faculté Polytechnique de Mons. In 1997, he granted a Master in Computer Audit from UAMS (ex IPO) and the CISA. He pursued his curriculum with trainings (several with certifications) on portfolio/programme/project management, Change Management, IT Management, IT governance and Interim Management. Laurent is also member of PMI Belgium, ISACA Belgium and Vlerick Alumini.<br/>During his 17 years professional track, Laurent was assigned to several positions mainly in the IT world, from analyst to auditor or IT director. Since 2004, as management consultant, Laurent succeeded in assignments related on IT governance, project management, process improvement (IT but also Financial or outsourcing), Quality assurance, portfolio management.</p><p>Laurent is used in definition of initiatives roadmap, workshop facilitation, problem solving sessions, training and coaching, implementation of state-of-the art solutions, change management, establishment of metrics, risk management practices, assessments.</p><p>He has been active in different sectors : mainly financial but also insurance, transport, building, manufacturing, service,… And this in small organizations to pan-european ones; from public ones to quoted ones.</p><p>In 2011, based on all its previous experiences, Laurent launched « sustain-IT », with aim to deliver state-of-the-art consulting services on IT sustainability. To achieve this, Laurent is busy developing a framework that may be used at any stage of a sustainability programme.<br/>Laurent should be delighted to provide you more information on his track.</p>';
-properties["events.ljanssens.greenit.title"] = 'Your choice of subject, read more...';
+properties["events.ljanssens.about.content"] = '<p><span>Laurent has now more than 18 years of experience in the IT world. </span></p><p><span>During his career, he occupied all functions in the IT department. Those last years, as management consultant, he has advised many ICT organisations to professionalize their abilities and to gain in maturity through quality management programs and continuous improvements.</span><br></p><div></div><div>Since 2011, Laurent created Sustain-IT  (<a rel="nofollow" target="_blank" href="http://www.sustain-it.be/">www.sustain-it.be</a>) which has for objective to assess, plan and implement GreenIT/IT sustainability Policies for ICT departments.</div><p></p>';
+properties["events.ljanssens.greenit.title"] = 'Green IT for Dummies';
 properties["events.ljanssens.greenit.subtitle"] = '';
-properties["events.ljanssens.greenit.synopsis"] = '<p>Laurent is proposing us several subjects. Help us to choose which one best fits your interests. Just post your favorite subject on <a href="https://www.facebook.com/pages/WaJug/365099796891111">WAJUG Facebook page</a> or on <a href="http://twitter.com/wajug">Twitter</a>.</p><ol><li><em>"Quality Manager: ami ou ennemi des développeurs?"</em><br/>L\'objectif est de présenter qq contrôles en amont ou en aval du développement qui peut aider le développeur dans son travail quotidien...Même si cela reste des activités de contrôle.<br/>&nbsp;</li><li><em>"Mais, c\'est quoi tout ce monde autour/au dessus de moi?"</em><br/>Une introduction/une vulgarisation à la gouvernance IT: le rôle du CIO, le rôle du portfolio mgt, le rôle de l\'architecte, quality manager, etc selon la perspective du développement.<br/>&nbsp;</li><li><em>"Le Green IT pour les nuls" ou "Tout ce que vous avez voulu savoir sur le green IT"?</em><br/>Une approche holostique du green IT. Uniquement parler de l\'optimisation de l\'infra n\'a pas de sens si d\'autres aspects ne sont pas abordés, comme les pratiques d\'achat, le coding, les Non functional requirements, etc... Comment relier tout cela?</li></ol>';
-properties["events.ljanssens.greenit.where_when"] = '<p>Date to be announced.<br/>Liege or nearby, exact location will be announced later.<br/><i>We\'re still looking for a meeting room? Anyone interested in hosting this event at his company? If so, please contact us at <a href="mailto:info@wajug.be">info@wajug.be</a></i></p>';
+properties["events.ljanssens.greenit.synopsis"] = '<p><div>First, during this talk, we will demystify what is Green IT (between hype or necessity). </div><div>Further on, under a collaborative way, we will plan what could be established to get a green IT organisation.</div><div><span style="line-height: 1.5;">Later on, we will summarize to understand why there is a need for a green IT/IT sustainability organisation.</span></div></p>';
+properties["events.ljanssens.greenit.where_when"] = '<p>Monday, 25 March 2013 at 19h00<br>Coworking space of Namur (center)<br>48, rue de Fer on 4th Floor<br>(above Ethias)';
+
+properties["events.XXX.about.header"] = 'TBA';
+properties["events.XXX.about.content"] = 'TBA';
+properties["events.XXX.xxx.title"] = 'TBA';
+properties["events.XXX.xxx.subtitle"] = 'TBA';
+properties["events.XXX.xxx.synopsis"] = 'TBA';
+properties["events.XXX.where_when"] = '<p>Date to be announced.<br/>Liege or nearby, exact location will be announced later.<br/><i>We\'re still looking for a meeting room? Anyone interested in hosting this event at his company? If so, please contact us at <a href="mailto:info@wajug.be">info@wajug.be</a></i></p>';
 
 properties["mission.title"] = "Mission & Values";
 properties["mission.statement"] = "WAJUG members eat, pray, live and die by the following rules.<br/>No, just kidding ;-) but here is a set of guidelines and values we try to adhere to.";
