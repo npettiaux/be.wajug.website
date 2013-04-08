@@ -23,6 +23,18 @@
     "en":"by",
     "fr":"par"
   },
+  "book": {
+    "en":"Book now",
+    "fr":"Réservez"
+  },
+  "about": {
+    "en":"About",
+    "fr":"À propos de"
+  },
+  "where_when": {
+    "en":"Where & When",
+    "fr":"Où & Quand"
+  },
   "footer": {
     "sponsors": {
       "title": {
@@ -172,6 +184,40 @@
       "items":{
         "en":"<ul> <li>To form a group of people who share the same affinity with the proposed program.</li> <li>To provide free to low-cost ativities to WAJUG members, taking various forms such as technical presentations, gatherings, etc.</li> <li>To develop and maintain partnership with companies.</li> <li>To develop some projects, making them available to the community.</li> <li>To help some charities.</li> <li>To help disseminate employment, contracting and/or internship opportunities.</li> </ul>",
         "fr":"<ul> <li>Former un groupe de personnes qui partagent les mêmes affinités avec le programme proposé.</li> <li>Fournir gratuitement ou à bas prix des activités aux membres de WAJUG, tels que présentations techniques, réunions, etc.</li> <li>Développer et maintenir des partenariats avec des sociétés.</li> <li>Développer des projets, en les rendant disponible à la communauté.</li> <li>Aider des organisations caritatives.</li> <li>Aider à disseminer des propositions d'emploi, de mission et/ou de stage </li> </ul>"
+      }
+    }
+  },
+  "events": {
+    "title": {
+      "en":"Upcoming Events",
+      "fr":"Prochaines Sessions"
+    },
+    "subtitle": {
+      "en":"Here's the agenda for our next events.<br />Check this page regularly for updates.",
+      "fr":"Voici l'agenda de nos prochaines sessions.<br />Revenez régulièrement sur cette page pour voir les mises à jour."
+    },
+    "header": {
+      "date": {
+        "en":"Date",
+        "fr":"Date"
+      },
+      "subject": {
+        "en":"Subject",
+        "fr":"Sujet"
+      },
+      "speaker": {
+        "en":"Speaker",
+        "fr":"Présentateur"
+      },
+      "location": {
+        "en":"Location",
+        "fr":"Lieu"
+      }
+    },
+    "button": {
+      "detail": {
+        "en":"Details",
+        "fr":"Détails"
       }
     }
   }

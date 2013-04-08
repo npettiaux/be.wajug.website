@@ -1,75 +1,83 @@
 <div class="container" style="padding-top: 80px">
   <div class="row">
     <div class="span6">
-      <h1 data-msg="events.title"></h1>
-      <p data-msg="events.subtitle">
+      <h1 ng-bind-html-unsafe="contents('title')"></h1>
+      <p ng-bind-html-unsafe="contents('subtitle')">
       </p>
       <table class="table table-striped table-condensed">
         <thead>
           <tr>
-            <th data-msg="events.table.header.date"></th>
-            <th data-msg="events.table.header.subject"></th>
-            <th data-msg="events.table.header.speaker"></th>
-            <th data-msg="events.table.header.location"></th>
+            <th ng-bind-html-unsafe="contents('header.date')"></th>
+            <th ng-bind-html-unsafe="contents('header.subject')"></th>
+            <th ng-bind-html-unsafe="contents('header.speaker')"></th>
+            <th ng-bind-html-unsafe="contents('header.location')"></th>
             <th></th>
           </tr>
         </thead>
         <tbody>
-          <tr class="done">
-            <td data-msg="events.table.content[0].date"></td>
-            <td style="text-decoration: line-through">
-              <a class="details" href="events/apetrella/scala.html" data-msg="events.table.content[0].subject"></a>
+          <tr ng-repeat="talk in talks" ng-class="{done: talk.done}">
+            <td ng-bind-html-unsafe="translate(talk.date)"></td>
+            <td ng-class="{done: talk.done}">
+              <a class="details" href="events/{{talk.speaker.id}}/{{talk.description}}.html" ng-bind-html-unsafe="translate(talk.subject)"></a>
             </td>
-            <td data-msg="events.table.content[0].speaker"></td>
-            <td data-msg="events.table.content[0].location"></td>
+            <td>{{talk.speaker.name}}</td>
+            <td>{{talk.location.name}}</td>
             <td>
-              <a class="details disabled btn btn-primary btn-block btn-mini" href="events/apetrella/scala.html" data-msg="events.button.details" style="max-height: 30px;min-width: 60px;">
-                  <i class="icon-play icon-white"></i>
-             </a>
-            </td>
-          </tr>
-          <tr class="done">
-            <td data-msg="events.table.content[1].date"></td>
-      <td style="text-decoration: line-through">
-        <a class="details next" href="events/srondal/agile-distributed.html" data-msg="events.table.content[1].subject"></a></td>
-            <td data-msg="events.table.content[1].speaker"></td>
-            <td data-msg="events.table.content[1].location"></td>
-            <td>
-              <a class="details btn btn-primary btn-block  btn-mini" href="events/srondal/agile-distributed.html" data-msg="events.button.details" style="max-height: 30px;min-width: 60px;">
-                <span class="icon-play icon-white"></span>
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <td data-msg="events.table.content[2].date"></td>
-            <td><a class="details" href="events/ljanssens/green-it.html" data-msg="events.table.content[2].subject"></a></td>
-            <td data-msg="events.table.content[2].speaker"></td>
-            <td data-msg="events.table.content[2].location"></td>
-            <td>
-              <a class="details btn btn-primary btn-block  btn-mini" href="events/ljanssens/green-it.html" data-msg="events.button.details" style="max-height: 30px;min-width: 60px;">
-              <span class="icon-play icon-white"></span>
-              </a>
-            </td>
-          </tr>
-
-          <tr>
-            <td data-msg="events.table.content[3].date"></td>
-            <td><a class="details" href="events/XXX/xxx.html" data-msg="events.table.content[3].subject"></a></td>
-            <td data-msg="events.table.content[3].speaker"></td>
-            <td data-msg="events.table.content[3].location"></td>
-            <td>
-              <a class="details btn btn-primary btn-block  btn-mini" href="events/XXX/xxx.html" data-msg="events.button.details" style="max-height: 30px;min-width: 60px;">
-              <span class="icon-play icon-white"></span>
+              <a ng-click="select(talk)"class="details disabled btn btn-primary btn-block btn-mini" style="max-height: 30px;min-width: 60px;">
+                <i class="icon-play icon-white"></i>
+                <span ng-bind-html-unsafe="contents('button.details')"></span>
               </a>
             </td>
           </tr>
         </tbody>
       </table>
-      <p data-msg="events.stay.tuned"></p>
+      <p ng-bind-html-unsafe="events.stay.tuned"></p>
     </div>
+
+
     <div class="span6">
       <div id="talk-content" style="margin:5%; padding-left:5%; border-left:1px darkgray solid;">
+        <div>
+          <h2 ng-bind-html-unsafe="title(selected)"></h2>
+          <h3><i ng-bind-html-unsafe="subtitle(selected)"></i></h3>
+          <p>
+            <a title="It's free!" href="http://wajug.fikket.com/events/{{selected.fikket}}/orders/new">
+              <button class=" btn btn-primary btn-block btn-mini" style="max-height: 30px;max-width: 80px;">
+                <span ng-bind-html-unsafe="contents('book', true)"></span> <i class="icon-shopping-cart icon-white"></i>
+              </button>
+            </a>
+          </p>
+
+          <div ng-bind-html-unsafe="synopsis(selected)">
+          </div>
+
+          <h2>
+            <span ng-bind-html-unsafe="contents('about', true)"></span><span>&nbsp;{{selected.speaker.name}}</span>
+            <br/>
+            <span>
+              <a href="https://twitter.com/{{selected.speaker.twitter}}"><img class="social speaker" src="/assets/images/Twitter-48.png"/></a>
+              <a href="http://be.linkedin.com/in/{{selected.speaker.linkedin}}"><img class="social speaker" src="/assets/images/Linkedin-48.png"/></a>
+              <a href="{{selected.speaker.site}}"><img class="social speaker" src="/assets/images/logo/{{selected.speaker.logo}}"/></a>
+            </span>
+          </h2>
+          <div ng-bind-html-unsafe="about(selected)">
+          </div>
+
+          <h2 ng-bind-html-unsafe="bio('where_when', true)"></h2>
+          <div ng-bind-html-unsafe="where_when(selected)">
+          </div>
+          <p>
+            <a title="It's free!" href="http://wajug.fikket.com/events/{{selected.fikket}}/orders/new">
+              <button class=" btn btn-primary btn-block btn-mini" style="max-height: 30px;max-width: 80px;">
+                <span ng-bind-html-unsafe="contents('book', true)"></span> <i class="icon-shopping-cart icon-white"></i>
+              </button>
+            </a>
+          </p>
+        </div>
+
       </div>
-    </div>
+<!--       <div ng-include src="url(selected)" id="talk-content" style="margin:5%; padding-left:5%; border-left:1px darkgray solid;">
+      </div>
+ -->    </div>
   </div>
 </div>

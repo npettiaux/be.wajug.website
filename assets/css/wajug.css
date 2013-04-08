@@ -184,6 +184,10 @@ body:before {/* thanks to Maleika (Kohoutec)*/
   opacity: 0.5;
 }
 
+td.done {
+  text-decoration: line-through;
+}
+
 /* Large desktop */
 @media (min-width: 1200px) {
   .social {

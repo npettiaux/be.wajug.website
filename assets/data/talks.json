@@ -1,25 +1,44 @@
 [
     {
         "date": {
-            "en": "17/01/2013 19h00",
+            "en": "01/17/2013 7PM",
             "fr": "17/01/2013 19h00"
         },
         "subject": {
             "en": "Introduction to functional programming using Scala",
             "fr": "Introduction à la programmation fonctionelle au travers de Scala"
         },
-        "speaker": "noootsab"
+        "title":{
+          "en":"Introduction to functional programming using Scala.",
+          "fr":"Introduction à la programmation fonctionelle au travers de Scala."
+        },
+        "subtitle":{
+          "en":"Why does it buzz... in the business industry?",
+          "fr":"Pourquoi ce buzz... en dehors des amphis ?"
+        },
+        "synopsis":{
+          "en":"<p>In this talk, you're gonna have a high level sight on the functional programming paradigm, expressions, immutability and alike. For illustration purpose, we'll be live coding in Scala.</p> <p>With such quick introduction, you'll master enough to catch its worth in the concurrency world -- an essential piece of any cloud application. One of the most popular library to take advantage of this beefed up concurrency power is probably Akka. </p><p>Drop da things in a web server, and you'll reach a kind-of Nirvana having a non-blocking and highly responsive and scalable component -- minimizing the resource consumption. </p> A logical continuation will be  the demonstration of the Play! Framework 2.<p></p>",
+          "fr":"<p>Dans cette présentation, nous allons survoler les concepts fondamentaux de la programmation fonctionnelle, les expressions, immutabilité et consors. A des fins d'illustrations, nous programmerons cela en live en utilisant Scala.</p> <p>Grâce à cette petite introduction, nous aurons déjà assez d'informations pour saisir les subtilités garantissant cette qualité dans le monde de la programmation concurrente -- pièce maîtresse de toute application cloud. Une des libraries les plus populaires prenant avantages de ces fonctionnalités glonflées en matière de concurrence est Akka.</p> <p>Mets tout ça dans un serveur web et tu obtiens un genre de Nirvana non-bloquant et hautement réactif -- optimisant la consommation des ressources et capable de monter en charge. En toute logique avec ce qui précède, un démonstration du Play! Framework 2 s'impose.</p>"
+        },
+        "description": "scala",
+        "speaker": "apetrella",
+        "location": "wsl",
+        "fikket": "introduction-a-la-programmation-fonctionelle-au-travers-de-scala-par-andy-petrella",
+        "done": true
     },
     {
       "date": {
-        "en": "27/02/2013 19h00",
+        "en": "02/27/2013 7PM",
         "fr": "27/02/2013 19h00"
       },
       "subject": {
         "en": "Lessons learned from scaling Agile to distributed, offshore teams",
         "fr": "Agile distribué en équipes offshores: retour d'expérience"
       },
-      "speaker": "stephanerondal"
+      "speaker": "srondal",
+      "description": "agile-distributed",
+      "location": "laforge",
+      "done": true
     },
     {
       "date": {
@@ -30,7 +49,24 @@
         "en": "Green IT for Dummies",
         "fr": "Le Green IT pour les nuls"
       },
-      "speaker": "laurentjanssens"
+      "speaker": "ljanssens",
+      "description": "green-it",
+      "location": "cownamur",
+      "done": true
+    },
+    {
+      "date": {
+        "en": "05/08/2013 7PM",
+        "fr": "05/08/2013 19h00"
+      },
+      "subject": {
+        "en": "What is Flukso?",
+        "fr": "Qu'est ce que Flukso ?"
+      },
+      "speaker": "xxx",
+      "description": "xxx",
+      "location": "xxx",
+      "done": false
     }
 
 ]

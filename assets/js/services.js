@@ -40,20 +40,37 @@ angular.module('wajug.services', []).
                     });
     return promise;
   }]).
-  factory("talks", ["$q", "$http", "speakers", function($q, $http, speakers) {
+  factory("locations", ["$http", function($http) {
+    var promise = $http.get('/assets/data/locations.json').
+                    then(function(resource) {
+                      return resource.data;
+                    });
+    return promise;
+  }]).
+  factory("talks", ["$q", "$http", "speakers", "locations", function($q, $http, speakers, locations) {
     var talks = $http.get('/assets/data/talks.json').
                     then(function(resource) {
                       return resource.data;
                     });
-    var promise = $q.all([talks, speakers])
-                    .then(function(talksAndSpeakers) {
-                      var talks = talksAndSpeakers[0];
-                      var speakers = talksAndSpeakers[1];
+    var promise = $q.all([talks, speakers, locations])
+                    .then(function(results) {
+                      var talks = results[0];
+                      var speakers = results[1];
+                      var locations = results[2];
                       angular.forEach(talks, function(talk) {
                         var speakerId = talk.speaker;
                         for (var spId in speakers) {
                           if (spId === speakerId) {
                             talk.speaker = speakers[spId];
+                            talk.speaker.id = spId;
+                            break;
+                          }
+                        }
+                        var locactionId = talk.location;
+                        for (var locId in locations) {
+                          if (locId === locactionId) {
+                            talk.location = locations[locId];
+                            talk.location.id = locId;
                             break;
                           }
                         }

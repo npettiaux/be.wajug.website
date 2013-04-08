@@ -43,7 +43,9 @@ function oLookup(o, path) {
 function translate(languages, contents, path) {
   if (contents) {
     var c = oLookup(contents, path);
-    return languages.translate(c);
+    if (c) {
+      return languages.translate(c);
+    }
   }
 }
 
@@ -114,6 +116,11 @@ function StartCtrl($scope, languages, contents, talks) {
   talks.then(function(talks) {
           $scope.talks = talks;
           $scope.lastTalk = talks[talks.length-1];
+          angular.forEach(function(t) {
+            if (!$scope.nextTalk && t.done == false) {
+              $scope.nextTalk = t;
+            }
+          });
         });
 
   $scope.translate = function(o) {
@@ -152,7 +159,79 @@ function MissionCtrl($scope, languages, contents) {
 }
 MissionCtrl.$inject = ["$scope", "languages", "contents"];
 
-function EventsCtrl(talks) {
-  _.each(talks.talks, function(i) {console.dir(i)});
+function EventsCtrl($scope, languages, contents, talks) {
+  // talks.then(function(talks) {
+  //   angular.forEach(talks, function(i) {console.dir(i)});
+  // });
+
+  var _contents;
+
+  contents.async()
+          .then(function(contents) {
+            _contents = contents;
+          });
+
+  talks.then(function(talks) {
+          $scope.talks = talks;
+          angular.forEach(function(t) {
+            if (!$scope.selected && t.done == false) {
+              $scope.selected = t;
+            }
+          });
+        });
+
+  $scope.translate = function(o) {
+    if (angular.isObject(o)) {
+      return languages.translate(o);
+    }
+  };
+
+  $scope.contents = function(pathString, absolute) {
+    var path = pathString.split(/\./g);
+    if (!absolute) {
+      path.unshift("events");
+    }
+    return translate(languages, _contents, path);
+  }
+
+  $scope.select = function(talk) {
+    if (talk) {
+      $scope.selected = talk;
+    }
+  }
+
+  $scope.url = function(talk) {
+    if (talk) {
+      return "events/"+talk.speaker.id+"/"+talk.description+".html";
+    }
+  }
+
+
+  $scope.title = function(talk) {
+    if (talk) {
+      return $scope.translate(talk.title);
+    }
+  }
+  $scope.subtitle = function(talk) {
+    if (talk) {
+      return $scope.translate(talk.subtitle);
+    }
+  }
+  $scope.synopsis = function(talk) {
+    if (talk) {
+      return $scope.translate(talk.synopsis);
+    }
+  }
+  $scope.bio = function(talk) {
+    if (talk) {
+      return $scope.translate(talk.speaker.bio);
+    }
+  }
+  $scope.where_when = function(talk) {
+    if (talk) {
+      return $scope.translate(talk.date)+"<br>"+talk.location.name+"<br>"+talk.location.address;
+    }
+  }
+
 }
-EventsCtrl.$inject = ["talks"];
+EventsCtrl.$inject = ["$scope", "languages", "contents", "talks"];
