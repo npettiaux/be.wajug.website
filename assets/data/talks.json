@@ -1,0 +1,36 @@
+[
+    {
+        "date": {
+            "en": "17/01/2013 19h00",
+            "fr": "17/01/2013 19h00"
+        },
+        "subject": {
+            "en": "Introduction to functional programming using Scala",
+            "fr": "Introduction à la programmation fonctionelle au travers de Scala"
+        },
+        "speaker": "noootsab"
+    },
+    {
+      "date": {
+        "en": "27/02/2013 19h00",
+        "fr": "27/02/2013 19h00"
+      },
+      "subject": {
+        "en": "Lessons learned from scaling Agile to distributed, offshore teams",
+        "fr": "Agile distribué en équipes offshores: retour d'expérience"
+      },
+      "speaker": "stephanerondal"
+    },
+    {
+      "date": {
+        "en": "03/25/2013 7PM",
+        "fr": "25/03/2013 19h00"
+      },
+      "subject": {
+        "en": "Green IT for Dummies",
+        "fr": "Le Green IT pour les nuls"
+      },
+      "speaker": "laurentjanssens"
+    }
+
+]

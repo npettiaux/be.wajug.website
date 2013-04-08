@@ -1,0 +1,20 @@
+[
+  {
+    "name":"NextLab",
+    "description": {
+      "en": "More Than IT",
+      "fr": "Plus que de l'IT"
+    },
+    "image": "nextlab.png",
+    "site": "http://nextlab.be"
+  },
+  {
+    "name":"Arexo",
+    "description": {
+      "en": "Your ICT consulting company",
+      "fr": "Votre société de consultance IT"
+    },
+    "image": "arexo.jpg",
+    "site": "http://arexo.be"
+  }
+]
