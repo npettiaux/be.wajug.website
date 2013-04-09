@@ -1,198 +1,96 @@
-<!DOCTYPE html>
-<!-- saved from url=(0054)http://twitter.github.com/bootstrap/examples/hero.html -->
-<html lang="en">
+<!doctype html>
+<html ng-app="wajug">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta charset="utf-8" />
-    <title>WAJUG</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
-    <meta name="author" content="St&eacute;phane Rondal" />
-    <meta name="author" content="Andy Petrella" />
-    <!-- Le styles -->
-    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="assets/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" />
-
-    <link href="assets/xing-wysihtml5/stylesheet.css" rel="stylesheet" />
-
-    <link href="assets/wajug.css" rel="stylesheet" />
-
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="./Wajug-red-fav.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./Wajug-red-fav.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./Wajug-red-fav.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./Wajug-red-fav.png" />
-    <link rel="apple-touch-icon-precomposed" href="./Wajug-red-fav.png" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script src="assets/jquery/jquery-1.7.1.min.js"></script>
+    <script src="assets/jquery/jquery.flip.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.1.4/angular.js"></script>
+    <script src="assets/angular-ui/angular-ui.min.js"></script>
+    <script src="assets/angular-ui/angular-ui-ieshiv.min.js"></script>
+    <script src="http://angular-ui.github.com/bootstrap/ui-bootstrap-tpls-0.2.0.js"></script>
+    <script src="assets/js/wajug.js"></script>
+    <script src="assets/js/services.js"></script>
+    <script src="assets/js/controllers.js"></script>
+    <script src="assets/js/filters.js"></script>
+    <script src="assets/js/directives.js"></script>
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link href="assets/css/wajug.css" rel="stylesheet">
+    <link href="assets/angular-ui/angular-ui.min.css" rel="stylesheet">
+  </head>
   <body>
-	<!-- facebook initialization --> 
-	<div id="fb-root"></div>
-	<script>(function(d, s, id) {
-	  var js, fjs = d.getElementsByTagName(s)[0];
-	  if (d.getElementById(id)) return;
-	  js = d.createElement(s); js.id = id;
-	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-	  fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));
-	</script>
-
-    <script id="toolbar-template" type="text/template">
-      <div id='edit' style='background-color: lightgray;'>
-        <div id="toolbar" class="btn-toolbar" style="display: none;">
-          <div class="btn-group">
-            <a class="btn btn-mini" data-wysihtml5-command="bold"><b>bold</b></a>
-            <a class="btn btn-mini" data-wysihtml5-command="italic"><i>italic</i></a>
-          </div>
-          <!-- Some wysihtml5 commands require extra parameters -->
-          <div class="btn-group">
-            <a class="btn btn-mini" data-wysihtml5-command="foreColor" data-wysihtml5-command-value="red">red</a>
-            <a class="btn btn-mini" data-wysihtml5-command="foreColor" data-wysihtml5-command-value="green">green</a>
-            <a class="btn btn-mini" data-wysihtml5-command="foreColor" data-wysihtml5-command-value="blue">blue</a>
-          </div>
-          <div class="btn-group">
-            <a class="btn btn-mini" data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h1">h1</a>
-            <a class="btn btn-mini" data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h2">h2</a>
-            <a class="btn btn-mini" data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h3">h3</a>
-            <a class="btn btn-mini" data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h4">h4</a>
-          </div>
-          <div class="btn-group">
-            <a class="btn btn-mini" data-wysihtml5-command="insertUnorderedList">insertUnorderedList</a>
-            <a class="btn btn-mini" data-wysihtml5-command="insertOrderedList">insertOrderedList</a>
-          </div>
-
-          <!-- Some wysihtml5 commands like 'createLink' require extra paramaters specified by the user (eg. href) -->
-          <a class="btn btn-mini" data-wysihtml5-command="createLink"><u>insert link</u></a>
-          <div data-wysihtml5-dialog="createLink" style="display: none;">
-            <label>
-              Link:
-              <input data-wysihtml5-dialog-field="href" value="http://" class="text">
-            </label>
-            <a class="btn btn-mini" data-wysihtml5-dialog-action="save">OK</a> <a class="btn btn-mini" data-wysihtml5-dialog-action="cancel">Cancel</a>
-          </div>
-
-          <div class="btn-group pull-right">
-            <a class="btn btn-mini" data-wysihtml5-action="change_view">switch to html view</a>
-            <a class="btn btn-mini" data-wysihtml5-action="process">process</a>
-            <a class="btn btn-mini" data-wysihtml5-action="close">close</a>
-          </div>
-
-        </div>
-        <form>
-          <textarea id='editor' placeholder='Enter your text ...' autofocus></textarea>
-        </form>
-      </div>
+    <!-- facebook initialization -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
     </script>
-
-
-    <div class="modal" id="showMsg" tabindex="-1" role="dialog" aria-labelledby="showMsgLabel" aria-hidden="true" style="display:none;">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-        <h3 id="showMsgLabel">Message Processed for property <span style="font-weight:bolder;color:darkGray;"></span></h3>
-      </div>
-      <div class="modal-body">
-        <textarea style="width: 100%"></textarea>
-      </div>
-      <div class="modal-footer">
-        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-      </div>
-    </div>
-
     <div id="wrap">
       <div id="wrapped">
         <div id="navbar" class="navbar navbar-inverse navbar-fixed-top">
-          <div class="navbar-inner">
+          <div class="navbar-inner" ng-controller="NavBarCtrl">
             <div class="container">
               <a class="brand" href="index.html">WAJUG</a>
               <div class="nav-collapse collapse">
-          			<ul class="nav">
-                  <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown"><span data-msg="index.menu.lgg"></span> <b class="caret"></b></a>
+                <ul class="nav">
+                  <li class="dropdown" ng-controller="SelectLanguagesCtrl">
+                    <a class="dropdown-toggle">
+                    {{title()}}
+                    </a>
                     <ul class="dropdown-menu">
-                      <li><a href="#en">English</a></li>
-                      <li><a href="#fr">Français</a></li>
+                      <li ng-repeat="lgg in languages" ng-click="setLanguage(lgg)">
+                        <a>{{lgg.name}}</a>
+                      </li>
                     </ul>
                   </li>
-          			</ul>
+                </ul>
               </div>
               <div>
                 <ul class="nav pull-right">
-                  <li class="active"><a href="#" data-msg="index.menu.home"></a></li>
-                  <li><a href="#mission" data-msg="index.menu.mission"></a></li>
-                  <li><a href="#events" data-msg="index.menu.events"></a></li>
+                  <li ui-route="#/"><a href="#/">{{contents.home()}}</a></li>
+                  <li ui-route="#/mission"><a href="#/mission">{{contents.mission()}}</a></li>
+                  <li ui-route="#/events"><a href="#/events">{{contents.events()}}</a></li>
                 </ul>
               </div>
-              <!--/.nav-collapse -->
             </div>
           </div>
         </div>
-        <div data-spy="affix" style="z-index:999">
-          <ul style="list-style:none">
+        <div >
+          <ul ui-scrollfix class="scrollfix" style="list-style:none">
             <li><a href="http://twitter.com/wajug"><img class="social" src="/assets/images/Twitter-48.png" alt="Twitter"/></a></li>
-            <li><a href="https://www.facebook.com/pages/WaJug/365099796891111"><img class="social" src="/assets/images/FaceBook-48.png" alt="Facebook"/></a></li>
+            <li ><a href="https://www.facebook.com/pages/WaJug/365099796891111"><img class="social" src="/assets/images/FaceBook-48.png" alt="Facebook"/></a></li>
           </ul>
         </div>
         <div class="container">
           <a href="https://github.com/WAJUG/be.wajug.website"><img class="ribbon" src="/assets/images/github-fork-red.png" alt="Fork me on GitHub"></a>
-          <div id="main">
+          <div id="main" ng-view>
           </div>
         </div>
       </div>
     </div>
-    <footer>
+    <footer ng-controller="FooterCtrl">
       <div style="height:1px;width:100%;background-color:whiteSmoke;"></div>
-      <h1 data-msg="index.sponsors.title">Our sponsors</h1>
+      <h1 ng-bind-html-unsafe="contents('sponsors.title')"></h1>
       <div id="sponsors">
-        <div class="sponsor" title="Click to flip">
+        <div ng-repeat="sponsor in sponsors" class="sponsor" title="Click to flip">
           <div class="sponsorFlip">
-            <img src="assets/images/sponsors/nextlab.png" alt="More about NextLab" />
+            <img src="assets/images/sponsors/{{sponsor.image}}" alt="More about {{sponsor.name}}" />
           </div>
-
           <div class="sponsorData">
-            <div class="sponsorDescription" data-msg="sponsors.nextlab.description"></div>
-            <div class="sponsorURL" data-msg="sponsors.nextlab.link"></div>
+            <div class="sponsorDescription" ng-bind-html-unsafe="translate(sponsor.description)"></div>
+            <div class="sponsorURL"><a href="{{sponsor.site}}">{{sponsor.name}}</a></div>
           </div>
         </div>
-        <div class="sponsor" title="Click to flip">
-          <div class="sponsorFlip">
-            <img src="assets/images/sponsors/arexo.jpg" alt="More about Arexo" />
-          </div>
-
-          <div class="sponsorData">
-            <div class="sponsorDescription" data-msg="sponsors.arexo.description"></div>
-            <div class="sponsorURL" data-msg="sponsors.arexo.link"></div>
-          </div>
-        </div>
-
-        <div class="sponsor" title="Click to flip">
-          <div class="sponsorFlip">
-            <img src="assets/images/devoxx/DevoxxUK-Banner2-125-125.jpg" alt="More about Devoxx UK" />
-          </div>
-
-          <div class="sponsorData">
-            <div class="sponsorDescription" data-msg="sponsors.devoxxuk.description"></div>
-            <div class="sponsorURL" data-msg="sponsors.devoxxuk.link"></div>
-          </div>
-        </div>
-
-
       </div>
       <div class="clearfix"></div>
       <hr />
       <div class="clearfix"></div>
-
       <div style="padding-left: 10px; padding-bottom: 5px;">
-        <p data-msg="index.footer.copy"></p>
+        <p ng-bind-html-unsafe="contents('copyright')"></p>
       </div>
     </footer>
-    <script src="assets/jquery/jquery-1.7.1.min.js"></script>
-    <script src="assets/jquery/jquery.flip.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-
-    <script src="assets/xing-wysihtml5/advanced.js"></script>
-    <script src="assets/xing-wysihtml5/wysihtml5-0.3.0.min.js"></script>
-
-    <script src="assets/messages/messages.js"></script>
-    <script src="assets/messages/en.js"></script>
-    <script src="assets/messages/fr.js"></script>
-    <script src="assets/wajug.js"></script>
   </body>
 </html>

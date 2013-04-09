@@ -223,7 +223,7 @@ function EventsCtrl($scope, languages, contents, talks) {
     }
   }
   $scope.bio = function(talk) {
-    if (talk) {
+    if (talk && talk.speaker) {
       return $scope.translate(talk.speaker.bio);
     }
   }

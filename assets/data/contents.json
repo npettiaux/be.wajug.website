@@ -38,10 +38,18 @@
   "footer": {
     "sponsors": {
       "title": {
-        "en":"Our sponsors",
+        "en":"Our partners",
         "fr":"Nos sponsors"
       }
+    },
+    "copyright": {
+      "en":"© WAJUG 2012. All rights reserved",
+      "fr":"© WAJUG 2012. Tous droits réservés"
     }
+  },
+  "call_for_help": {
+    "en": "<p>Date to be announced.<br/>Liege or nearby, exact location will be announced later.<br/><i>We're still looking for a meeting room? Anyone interested in hosting this event at his company? If so, please contact us at <a href='mailto:info@wajug.be'>info@wajug.be</a></i></p>",
+    "fr": "<p>Date à annoncer.<br> Liège ou aux alentours, l'emplacement exact vous sera communiqué ultérieurement.<br> <i>Nous sommes toujours à la recherche d'une salle de réunion. Si vous souhaitez nous accueillir au sein de votre entreprise, n'hésitez pas à nous contacter: <a rel='nofollow' target='_blank'>info@wajug.be</a></i> </p>"
   },
   "start": {
     "moto": {
@@ -219,6 +227,10 @@
         "en":"Details",
         "fr":"Détails"
       }
+    },
+    "stay_tuned": {
+      "en":"Stay tuned, more events to be announced...",
+      "fr":"Restez branché, d'autres sessions sont encore à venir..."
     }
   }
 }

@@ -58,6 +58,10 @@ a[data-wysihtml5-command-value="blue"] {
 }
 
 
+#main > div.hero-unit, #main > .well {
+  margin: 30px;
+}
+
 footer h1 {
   text-align: center;
 }

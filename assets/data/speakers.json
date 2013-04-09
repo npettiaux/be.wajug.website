@@ -1,7 +1,7 @@
 {
   "apetrella" : {
     "twitter": "noootsab",
-    "linkedin": "andy.petrella",
+    "linkedin": "andypetrella",
     "name": "Andy Petrella",
     "site": "http://nextlab.be",
     "logo": "nextlab.png",
@@ -12,10 +12,10 @@
   },
   "srondal" : {
     "twitter": "stephanerondal",
-    "linkedin": "",
+    "linkedin": "stephanerondal",
     "name": "Stephane Rondal",
-    "site": "",
-    "logo": "",
+    "site": "http://www.arexo.be/",
+    "logo": "arexo.jpg",
     "bio": {
       "en":"<p>When he's not busy with his family, traveling, or toying around with geeky stuff, Stephane Rondal is an avid Agilist. He has been learning, applying and teaching Agile since 2005, on solo projects up to projects involving highly distributed teams.</p><p>Stephane is a frequent trainer on Agile matters, as well as a Java/Java EE architect. He's also the co-founder of Arexo, a Belgian IT consultancy company.</p>",
       "fr":"<p>When he's not busy with his family, traveling, or toying around with geeky stuff, Stephane Rondal is an avid Agilist. He has been learning, applying and teaching Agile since 2005, on solo projects up to projects involving highly distributed teams.</p><p>Stephane is a frequent trainer on Agile matters, as well as a Java/Java EE architect. He's also the co-founder of Arexo, a Belgian IT consultancy company.</p>"
@@ -23,17 +23,17 @@
   },
   "ljanssens" : {
     "twitter": "SustainITBiz",
-    "linkedin": "",
+    "linkedin": "janssenslaurent",
     "name": "Laurent Janssens",
-    "site": "",
-    "logo": "",
+    "site": "http://www.sustain-it.be/",
+    "logo": "sustain-it.gif",
     "bio": {
       "en":"<p><span>Laurent has now more than 18 years of experience in the IT world. </span></p><p><span>During his career, he occupied all functions in the IT department. Those last years, as management consultant, he has advised many ICT organisations to professionalize their abilities and to gain in maturity through quality management programs and continuous improvements.</span><br></p><div></div><div>Since 2011, Laurent created Sustain-IT  (<a rel='nofollow' target='_blank' href='http://www.sustain-it.be/'>www.sustain-it.be</a>) which has for objective to assess, plan and implement GreenIT/IT sustainability Policies for ICT departments.</div><p></p>",
       "fr":"<p>Laurent a 18 ans d'expérience dans le monde IT.&nbsp;<span style='line-height: 1.5;'>Il a rempli toutes les fonctions dans le département ICT.&nbsp;</span></p><p><span style='line-height: 1.5;'>Ces dernières années, en tant que management consultant, il aide les organisations ICT à se développer et à s'améliorer en les accompagnant dans leurs démarches de qualité et d'améliorations continues.&nbsp;</span></p><p><span style='line-height: 1.5;'>Depuis 2011, il a créé Sustain-IT (</span><a rel='nofollow' target='_blank' href='http://www.sustain-it.be/' style='line-height: 1.5;' title='Link: http://www.sustain-it.be/'>www.sustain-it.be</a><span style='line-height: 1.5;'>) qui a pour objectif d'évaluer, de définir et implémenter&nbsp;les politiques Green IT/IT sustainability&nbsp;des départements ICT. &nbsp;</span></p>"
     }
   },
   "xxx" : {
-    "twitter": "@xxx",
+    "twitter": "xxx",
     "linkedin": "xxx",
     "name": "Xxx Xxx",
     "site": "xxx",

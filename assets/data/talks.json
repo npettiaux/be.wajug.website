@@ -35,8 +35,20 @@
         "en": "Lessons learned from scaling Agile to distributed, offshore teams",
         "fr": "Agile distribué en équipes offshores: retour d'expérience"
       },
-      "speaker": "srondal",
+      "title":{
+        "en":"Lessons learned from scaling Agile to distributed, offshore teams.",
+        "fr":"Agile distribué en équipes offshores: retour d'expérience"
+      },
+      "subtitle":{
+        "en":"",
+        "fr":""
+      },
+      "synopsis": {
+        "en": "<p>Driving a software project to success is notoriously hard, be it using an Agile methodology or not. Add offshore distributed teams to the picture, and it gets... even harder. Obviously, communication does not get any smoother, while cultural differences start acting as barriers.</p><p>By attending this talk, you will learn about some of the problems different teams encountered on such projects, and what was done to overcome them. Though there are no silver bullets, the goal of this presentation is to open your eyes, inspire you new ideas, leading to better resolutions.</p><p>We’ll address topics such as cross-team synchronization, slippery iteration plans, <i>“It’s not our fault, it’s theirs!”</i>, cultural diversity/sensibility, …</p><p>These solutions were indeed crafted given the particularities of the project at hand, within its specific context. Your case is different, for sure, but hopefully you'll be able to spot some patterns, and shed new lights in order to overcome your own challenges.</p>",
+        "fr": "<p>Réussir un projet de développement logiciel est dur, c'est bien connu. Ajoutez y des aspects d'équipes offshores distribuées, et ça n'en devient que plus dur. La communication ne s'améliore pas, les différences culturelles se dressent comme des barrières.</p><p>Au cours de cette présentation, vous en apprendrez plus sur les problèmes rencontrés par ces différentes équipes, et les solutions qui ont été adoptées pour les résoudre. Bien qu'il n’y aie pas de recette miracle, le but de ce talk est de vous ouvrir les yeux, vous inspirer de nouvelles idées menant à de nouvelles solutions.</p><p>Nous aborderons des sujets tels que la synchronisation inter-équipes, le non respect des plans d'itérations, le <i>« Ce n'est pas de notre faute, c'est de la leur ! »</i>, les différences de sensibilités culturelles, …</p><p>Ces solutions ont bien sur été mises en place dans le cadre d'un projet particulier, et de son contexte spécifique. Votre cas est différent, c'est sur, mais vous reconnaitrez certainement des « patterns », et pourrez vous attaquer à vos défis sous un nouvel éclairage.</p>"
+      },
       "description": "agile-distributed",
+      "speaker": "srondal",
       "location": "laforge",
       "done": true
     },
@@ -49,8 +61,20 @@
         "en": "Green IT for Dummies",
         "fr": "Le Green IT pour les nuls"
       },
-      "speaker": "ljanssens",
+      "title":{
+        "en":"Green IT for Dummies",
+        "fr":"Le Green IT pour les nuls"
+      },
+      "subtitle":{
+        "en":"",
+        "fr":""
+      },
+      "synopsis": {
+        "en": "<p><div>First, during this talk, we will demystify what is Green IT (between hype or necessity). </div><div>Further on, under a collaborative way, we will plan what could be established to get a green IT organisation.</div><div><span style='line-height: 1.5;'>Later on, we will summarize to understand why there is a need for a green IT/IT sustainability organisation.</span></div></p>",
+        "fr": "<p>Tout d'abord, au cours de cette conférence, nous démystifierons ce qu'est&nbsp;le GreenIT (entre hype et&nbsp;nécessité).&nbsp;</p><p>Ensuite, sur un mode participatif,&nbsp;nous&nbsp;<span>déterminerons ce qui peut être développé pour rendre une organisation plus verte.&nbsp;</span></p><p><span>Enfin, nous synthétiserons en répondant à la nécessité d'une politique verte pour&nbsp;les organisations ICT.&nbsp;</span><br></p>"
+      },
       "description": "green-it",
+      "speaker": "ljanssens",
       "location": "cownamur",
       "done": true
     },
@@ -60,13 +84,20 @@
         "fr": "05/08/2013 19h00"
       },
       "subject": {
-        "en": "What is Flukso?",
-        "fr": "Qu'est ce que Flukso ?"
+        "en": "",
+        "fr": ""
       },
-      "speaker": "xxx",
+      "title":{
+        "en":"",
+        "fr":""
+      },
+      "subtitle":{
+        "en":"",
+        "fr":""
+      },
       "description": "xxx",
+      "speaker": "xxx",
       "location": "xxx",
       "done": false
     }
-
 ]

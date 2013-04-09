@@ -31,7 +31,7 @@
           </tr>
         </tbody>
       </table>
-      <p ng-bind-html-unsafe="events.stay.tuned"></p>
+      <p ng-bind-html-unsafe="contents('stay_tuned')"></p>
     </div>
 
 
@@ -60,10 +60,10 @@
               <a href="{{selected.speaker.site}}"><img class="social speaker" src="/assets/images/logo/{{selected.speaker.logo}}"/></a>
             </span>
           </h2>
-          <div ng-bind-html-unsafe="about(selected)">
+          <div ng-bind-html-unsafe="bio(selected)">
           </div>
 
-          <h2 ng-bind-html-unsafe="bio('where_when', true)"></h2>
+          <h2 ng-bind-html-unsafe="contents('where_when', true)"></h2>
           <div ng-bind-html-unsafe="where_when(selected)">
           </div>
           <p>
@@ -76,8 +76,6 @@
         </div>
 
       </div>
-<!--       <div ng-include src="url(selected)" id="talk-content" style="margin:5%; padding-left:5%; border-left:1px darkgray solid;">
-      </div>
- -->    </div>
+    </div>
   </div>
 </div>
