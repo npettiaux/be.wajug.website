@@ -84,20 +84,25 @@
         "fr": "05/08/2013 19h00"
       },
       "subject": {
-        "en": "",
-        "fr": ""
+        "en": "Flukso in a Nutshell",
+        "fr": "Flukso in a Nutshell"
       },
       "title":{
-        "en":"",
-        "fr":""
+        "en":"Flukso in a Nutshell",
+        "fr":"Flukso in a Nutshell"
       },
       "subtitle":{
         "en":"",
         "fr":""
       },
-      "description": "xxx",
-      "speaker": "xxx",
-      "location": "xxx",
+      "synopsis": {
+		"en" : "<p>Flukso is a community metering platform. People install a Fluksometer in their home or office to monitor their electricity, water and gas usage and benchmark their consumption against other Fluksonians.</p><p>This talk will give you an overview of the Flukso software stack. From the embedded code running on the Fluksometers to the server components. Like any organism, the Flukso platform is constantly evolving. A selection of the major design choices, past and present, will therefore be addressed. So do please come and join us if you've got a interest in the topics of distributed systems, telemetry and software robustness.</p>",
+		"fr" : "<p>Flukso is a community metering platform. People install a Fluksometer in their home or office to monitor their electricity, water and gas usage and benchmark their consumption against other Fluksonians.</p><p>This talk will give you an overview of the Flukso software stack. From the embedded code running on the Fluksometers to the server components. Like any organism, the Flukso platform is constantly evolving. A selection of the major design choices, past and present, will therefore be addressed. So do please come and join us if you've got a interest in the topics of distributed systems, telemetry and software robustness.</p>"
+	},
+	  "description" : "flukso",
+      "speaker": "bvandermeerssche",
+      "location": "TBA",
+      "fikket": "flukso-in-a-nutshell-by-bart-van-der-meerssche",
       "done": false
     }
 ]

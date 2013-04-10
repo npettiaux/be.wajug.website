@@ -32,15 +32,15 @@
       "fr":"<p>Laurent a 18 ans d'expérience dans le monde IT.&nbsp;<span style='line-height: 1.5;'>Il a rempli toutes les fonctions dans le département ICT.&nbsp;</span></p><p><span style='line-height: 1.5;'>Ces dernières années, en tant que management consultant, il aide les organisations ICT à se développer et à s'améliorer en les accompagnant dans leurs démarches de qualité et d'améliorations continues.&nbsp;</span></p><p><span style='line-height: 1.5;'>Depuis 2011, il a créé Sustain-IT (</span><a rel='nofollow' target='_blank' href='http://www.sustain-it.be/' style='line-height: 1.5;' title='Link: http://www.sustain-it.be/'>www.sustain-it.be</a><span style='line-height: 1.5;'>) qui a pour objectif d'évaluer, de définir et implémenter&nbsp;les politiques Green IT/IT sustainability&nbsp;des départements ICT. &nbsp;</span></p>"
     }
   },
-  "xxx" : {
-    "twitter": "xxx",
-    "linkedin": "xxx",
-    "name": "Xxx Xxx",
-    "site": "xxx",
-    "logo": "xxx",
+  "bvandermeerssche" : {
+    "twitter": "flukso",
+    "linkedin": "bartvandermeerssche",
+    "name": "Bart Van Der Meerssche",
+    "site": "http://www.flukso.net",
+    "logo": "flukso.png",
     "bio":{
-      "en":"",
-      "fr":""
+      "en":"Bart Van Der Meerssche is an electrical engineer and the founder of Flukso.",
+      "fr":"Bart Van Der Meerssche is an electrical engineer and the founder of Flukso."
     }
   }
 }
