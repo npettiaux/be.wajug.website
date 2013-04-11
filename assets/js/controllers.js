@@ -173,9 +173,10 @@ function EventsCtrl($scope, languages, contents, talks) {
 
   talks.then(function(talks) {
           $scope.talks = talks;
-          angular.forEach(function(t) {
-            if (!$scope.selected && t.done == false) {
-              $scope.selected = t;
+          angular.forEach($scope.talks, function(t) {
+            console.dir($scope.selected)
+            if (!$scope.selected && !t.done) {
+              $scope.select(t);
             }
           });
         });

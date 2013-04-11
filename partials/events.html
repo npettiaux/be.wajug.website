@@ -18,12 +18,12 @@
           <tr ng-repeat="talk in talks" ng-class="{done: talk.done}">
             <td ng-bind-html-unsafe="translate(talk.date)"></td>
             <td ng-class="{done: talk.done}">
-              <a class="details" href="events/{{talk.speaker.id}}/{{talk.description}}.html" ng-bind-html-unsafe="translate(talk.subject)"></a>
+              <a class="details" ng-click="select(talk)" future-href="events/{{talk.speaker.id}}/{{talk.description}}.html" ng-bind-html-unsafe="translate(talk.subject)"></a>
             </td>
             <td>{{talk.speaker.name}}</td>
             <td>{{talk.location.name}}</td>
             <td>
-              <a ng-click="select(talk)"class="details disabled btn btn-primary btn-block btn-mini" style="max-height: 30px;min-width: 60px;">
+              <a ng-click="select(talk)" class="details disabled btn btn-primary btn-block btn-mini" style="max-height: 30px;min-width: 60px;">
                 <i class="icon-play icon-white"></i>
                 <span ng-bind-html-unsafe="contents('button.details')"></span>
               </a>
