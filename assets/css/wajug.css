@@ -195,12 +195,10 @@ td.done {
 /* Large desktop */
 @media (min-width: 979px) {
   .social {
-    width: 48px;
-    height: 48px;
+    max-height: 48px;
   }
   .social.speaker {
-    width: 32px;
-    height: 32px;
+    max-height: 32px;
   }
 }
 
@@ -210,12 +208,10 @@ td.done {
     margin: 0 0 0 10px;
   }
   .social {
-    width: 32px;
-    height: 32px;
+    max-height: 32px;
   }
   .social.speaker {
-    width: 24px;
-    height: 24px;
+    max-height: 24px;
   }
 }
 
@@ -229,12 +225,10 @@ td.done {
     margin: 0 0 0 10px;
   }
   .social {
-    width: 16px;
-    height: 16px;
+    max-height: 16px;
   }
   .social.speaker {
-    width: 4px;
-    height: 4px;
+    max-height: 8px;
   }
 }
 
