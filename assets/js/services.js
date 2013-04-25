@@ -10,8 +10,8 @@ angular.module('wajug.services', []).
   factory("languages", [function() {
     function Languages() {
       this.lggs = [];
-      this.lggs[0] = {id:"en", name: "English"};
-      this.lggs[1] = {id:"fr", name: "Français"};
+      this.lggs[0] = {id:"fr", name: "Français"};
+      this.lggs[1] = {id:"en", name: "English"};
 
       this.selected = this.lggs[0];
 
