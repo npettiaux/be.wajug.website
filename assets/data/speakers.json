@@ -42,5 +42,16 @@
       "en":"Bart Van Der Meerssche is an electrical engineer and the founder of Flukso.",
       "fr":"Bart Van Der Meerssche is an electrical engineer and the founder of Flukso."
     }
+  },
+  "gcuisinier" : {
+    "twitter": "gcuisinier",
+    "linkedin": "bartvandermeerssche",
+    "name": "Gildas Cuisinier",
+    "site": "http://www.gcuisinier.net",
+    "logo": "",
+    "bio":{
+      "en":"<p>Ancien de l’Inpres, c’est durant mes premiers pas en entreprise que j’ai fait la découverte de Spring Framework. Celui-ci était à l’époque une vrai révolution pour le développement en entreprise. Je suis rapidement devenu fan, et j’ai voulu participer à ma manière à mieux faire connaitre celui-ci. C’est dans cette optique que je suis devenu rédacteur sur Développez.com, et que j’ai fini par mettre en place la section Spring de celui-ci, participer à des évènements comme SpringOne ou rencontrer Interface21/SpringSource.</p><p>Par la suite j’ai eu l’occasion de venir prêcher la bonne paroles dans plusieurs JUGs : BreizhJUG, LorraineJUG, YaJUG, MarsJUG, ParisJUG ainsi que lors de la première édition de Devoxx France.</p>",
+      "fr":"<p>Ancien de l’Inpres, c’est durant mes premiers pas en entreprise que j’ai fait la découverte de Spring Framework. Celui-ci était à l’époque une vrai révolution pour le développement en entreprise. Je suis rapidement devenu fan, et j’ai voulu participer à ma manière à mieux faire connaitre celui-ci. C’est dans cette optique que je suis devenu rédacteur sur Développez.com, et que j’ai fini par mettre en place la section Spring de celui-ci, participer à des évènements comme SpringOne ou rencontrer Interface21/SpringSource.</p><p>Par la suite j’ai eu l’occasion de venir prêcher la bonne paroles dans plusieurs JUGs : BreizhJUG, LorraineJUG, YaJUG, MarsJUG, ParisJUG ainsi que lors de la première édition de Devoxx France.</p>"
+    }
   }
 }
