@@ -60,15 +60,18 @@ function NavBarCtrl($scope, languages, contents) {
           });
 
   $scope.contents = {
-    home:     function() {
-                return translate(languages, _contents, ["home"]);
-              },
-    mission:  function() {
-                return translate(languages, _contents, ["mission"]);
-              },
-    events:   function() {
-                return translate(languages, _contents, ["events"]);
-              }
+    home:       function() {
+                  return translate(languages, _contents, ["home"]);
+                },
+    mission:    function() {
+                  return translate(languages, _contents, ["mission"]);
+                },
+    events:     function() {
+                  return translate(languages, _contents, ["events"]);
+                },
+    sponsoring: function() {
+                  return translate(languages, _contents, ["sponsoring"]);
+                }
   };
 
 }
@@ -236,3 +239,60 @@ function EventsCtrl($scope, languages, contents, talks) {
 
 }
 EventsCtrl.$inject = ["$scope", "languages", "contents", "talks"];
+
+function SponsoringCtrl($scope, $timeout, languages, sponsoring, contents) {
+
+  $scope.headers = {}
+  $scope.selectedLevel = 0;
+
+  sponsoring.then(function(sponsoring) {
+            $scope.prices  = sponsoring.prices;
+            $scope.advantages  = sponsoring.advantages;
+            console.dir($scope.prices);
+            console.dir($scope.advantages);
+          });
+
+
+  $timeout(function() {
+    $scope.headers.who = true;
+
+    $timeout(function() {
+      $scope.headers.why = true;
+
+      $timeout(function() {
+        $scope.headers.how = true;
+
+        $timeout(function() {
+          angular.element("#XXX").removeClass("init");
+
+          $timeout(function() {
+            $scope.expanded = true;
+            angular.element("#XXX .body").slideDown();
+          }, 300);
+        }, 400);
+      }, 300);
+    }, 300);
+  }, 300);
+
+  var _contents;
+  contents.async()
+          .then(function(contents) {
+            _contents = contents;
+          });
+
+
+  $scope.translate = function(o) {
+    if (angular.isObject(o)) {
+      return languages.translate(o);
+    }
+  };
+
+  $scope.contents = function(pathString, absolute) {
+    var path = pathString.split(/\./g);
+    if (!absolute) {
+      path.unshift("sponsoring");
+    }
+    return translate(languages, _contents, path);
+  }
+}
+SponsoringCtrl.$inject = ["$scope", "$timeout", "languages", "sponsoring", "contents"];

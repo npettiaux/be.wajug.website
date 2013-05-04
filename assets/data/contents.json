@@ -17,6 +17,10 @@
     "events" : {
       "en": "Events",
       "fr": "Événements"
+    },
+    "sponsoring" : {
+      "en": "Sponsoring",
+      "fr": "Sponsoring"
     }
   },
   "by": {
@@ -231,6 +235,58 @@
     "stay_tuned": {
       "en":"Stay tuned, more events to be announced...",
       "fr":"Restez branché, d'autres sessions sont encore à venir..."
+    }
+  },
+  "sponsoring": {
+    "title": {
+      "en":"Sponsoring Program",
+      "fr":"Programme de Sponsoring"
+    },
+    "who": {
+      "en": "For Who",
+      "fr": "Pour Qui"
+    },
+    "why": {
+      "en": "Why",
+      "fr": "Pourquoi"
+    },
+    "how": {
+      "en": "How",
+      "fr": "Comment"
+    },
+    "recap": {
+      "en": "WAJUG is a user group of professionals active in the software development sector. Typically, our members are developers, analysts, project leaders from the Walloon region (Liege, Namur, Charleroi, …) , but also spread across Belgium/Europe.",
+      "fr": "WAJUG est un groupe d'utilisateurs de professionnels actifs dans le secteur du développement de logiciels. En règle générale, nos membres sont des développeurs, analystes, chefs de projet de la région wallonne (Liège, Namur, Charleroi, ...), mais aussi à travers la Belgique / Europe."
+    },
+    "definition": {
+      "en": "By becoming WAJUG sponsors, companies can easily promote their brand, services, products and/or job opportunities to our members. Additionally, sponsors support the user group, helping it to pursue its <a href='#/mission'>mission</a>, as their financial contribution helps to cover some of the administrative & organizational costs.",
+      "fr": "En devenant sponsors WAJUG, les entreprises peuvent facilement promouvoir leur marque, leurs services, leurs produits et/ou les possibilités d'emploi vers nos membres. En outre, les sponsors soutiennent le groupe d'utilisateurs, en l'aidant à poursuivre sa <a href='#/mission'>mission</a>, ainsi leur contribution financière aide à couvrir une partie des frais administratif et organisationnel."
+    },
+    "explanation": {
+      "en": "In order to fit different sponsoring budgets, our offer consists of 3 packages, each with a distinct price and a distinct set of benefits. <strong>Please notice that are discounted prices are valid till end of August 2013.</strong>",
+      "fr": "Afin de s'adapter à différents budgets de sponsoring, notre offre se compose de 3 options, chacune ayant un prix et un ensemble distincts d'avantages. <strong>Notez que sont actualisés sont valables jusqu'à fin Août 2013.</strong>"
+    },
+    "price": {
+      "en": "Price/year",
+      "fr": "Prix/an"
+    },
+    "walloon": {
+      "for": {
+        "en": "In Wallon",
+        "fr": "En Wallon"
+      },
+      "silver": {
+        "en": "Silver",
+        "fr": "Argent"
+      },
+      "gold": {
+        "en": "Gold",
+        "fr": "Or"
+      },
+      "platinium": {
+        "en": "Platinium",
+        "fr": "Platine"
+      }
     }
   }
 }

@@ -87,11 +87,11 @@ angular.module('wajug.services', []).
                     });
     return promise;
   }]).
-  factory("places", [function() {
-    function Places() {
-      this.places = [];
-      this.places[0] = {name: "wsl"};
-    };
-    return new Places();
+  factory("sponsoring", ["$http", function($http) {
+    var promise = $http.get('/assets/data/sponsoring.json').
+                    then(function(resource) {
+                      return resource.data;
+                    });
+    return promise;
   }])
 ;

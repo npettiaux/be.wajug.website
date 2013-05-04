@@ -6,6 +6,7 @@ angular.module('wajug', ['ui', 'ui.bootstrap', 'wajug.filters', 'wajug.services'
     $routeProvider.when('/', {templateUrl: 'partials/start.html', controller: StartCtrl});
     $routeProvider.when('/mission', {templateUrl: 'partials/mission.html', controller: MissionCtrl});
     $routeProvider.when('/events', {templateUrl: 'partials/events.html', controller: EventsCtrl});
+    $routeProvider.when('/sponsoring', {templateUrl: 'partials/sponsoring.html', controller: SponsoringCtrl});
     $routeProvider.otherwise({redirectTo: '/'});
   }]);
 
