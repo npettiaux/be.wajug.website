@@ -118,12 +118,16 @@ function StartCtrl($scope, languages, contents, talks) {
 
   talks.then(function(talks) {
           $scope.talks = talks;
-          $scope.lastTalk = talks[talks.length-1];
-          angular.forEach(function(t) {
+          $scope.upcoming = [];
+          angular.forEach(talks, function(t) {
             if (!$scope.nextTalk && t.done == false) {
               $scope.nextTalk = t;
             }
+            if (t.done == false) {
+              $scope.upcoming.push(t);
+            }
           });
+          console.dir($scope.upcoming);
         });
 
   $scope.translate = function(o) {

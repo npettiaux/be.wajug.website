@@ -26,12 +26,12 @@
 
 <div class="well">
   <h2 ng-bind-html-unsafe="contents('coming_soon')"></h2>
-  <p>
-    <div style="display:inline;" ng-bind-html-unsafe="translate(lastTalk.date)"></div>:&nbsp;
-    <a class="details" href="#events" ng-bind-html-unsafe="translate(lastTalk.subject)"></a>&nbsp;
+  <div ng-repeat="t in upcoming">
+    <div style="display:inline;" ng-bind-html-unsafe="translate(t.date)"></div>:&nbsp;
+    <a class="details" href="#events" ng-bind-html-unsafe="translate(t.subject)"></a>&nbsp;
     <div style="display:inline;" ng-bind-html-unsafe="contents('by', true)"></div>&nbsp;
-    <div style="display:inline;" ng-bind-html-unsafe="lastTalk.speaker.name"></div>
-  </p>
+    <div style="display:inline;" ng-bind-html-unsafe="t.speaker.name"></div>
+  </div>
 </div>
 
 <div class="row">
