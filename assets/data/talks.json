@@ -103,7 +103,7 @@
       "speaker": "bvandermeerssche",
       "location": "laforge",
       "fikket": "flukso-in-a-nutshell-by-bart-van-der-meerssche",
-      "done": false
+      "done": true
     },
     {
       "date": {
@@ -129,7 +129,7 @@
 	    "description" : "spring",
       "speaker": "gcuisinier",
       "location": "TBA",
-      "fikket": "",
+      "fikket": "le-framework-spring-tout-le-portfolio-par-gildas-cuisinier",
       "done": false
     }
 
