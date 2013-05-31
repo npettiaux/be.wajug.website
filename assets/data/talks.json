@@ -123,13 +123,40 @@
         "fr":""
       },
       "synopsis": {
-	     	"en" : "<p>En 2004, Spring Framework venait combler de gros manques dans J2EE en apportant simplicité, légèreté, facilité pour tester les composants. Il était un vrai ciment dans un projet et permettait de réduire le code technique.</p><p>Après quelques années où il a fini par s’imposer, JEE a pris le temps d’évoluer, et en 2009, JEE6 est annoncé et intégre CDI, un 'concurrent' à Spring. Un combat de titans’annonçait: d’un coté un standard officiel, de l’autre un standard de fait.</p><p>En 2013, 'Spring' n’est plus seulement le moteur d’injection de dépendance, mais tout un portfolio de projets qui répondent à divers besoin : Intégration de service, processus de batch, gestion de la sécurité, accès aux réseaux sociaux, …</p><p>Venez découvrir ce que le portfolio Spring peut faire pour vous !</p>",
-		    "fr" : "<p>En 2004, Spring Framework venait combler de gros manques dans J2EE en apportant simplicité, légèreté, facilité pour tester les composants. Il était un vrai ciment dans un projet et permettait de réduire le code technique.</p><p>Après quelques années où il a fini par s’imposer, JEE a pris le temps d’évoluer, et en 2009, JEE6 est annoncé et intégre CDI, un 'concurrent' à Spring. Un combat de titans’annonçait: d’un coté un standard officiel, de l’autre un standard de fait.</p><p>En 2013, 'Spring' n’est plus seulement le moteur d’injection de dépendance, mais tout un portfolio de projets qui répondent à divers besoin : Intégration de service, processus de batch, gestion de la sécurité, accès aux réseaux sociaux, …</p><p>Venez découvrir ce que le portfolio Spring peut faire pour vous !</p>"
-	    },
-	    "description" : "spring",
+        "en" : "<p>En 2004, Spring Framework venait combler de gros manques dans J2EE en apportant simplicité, légèreté, facilité pour tester les composants. Il était un vrai ciment dans un projet et permettait de réduire le code technique.</p><p>Après quelques années où il a fini par s’imposer, JEE a pris le temps d’évoluer, et en 2009, JEE6 est annoncé et intégre CDI, un 'concurrent' à Spring. Un combat de titans’annonçait: d’un coté un standard officiel, de l’autre un standard de fait.</p><p>En 2013, 'Spring' n’est plus seulement le moteur d’injection de dépendance, mais tout un portfolio de projets qui répondent à divers besoin : Intégration de service, processus de batch, gestion de la sécurité, accès aux réseaux sociaux, …</p><p>Venez découvrir ce que le portfolio Spring peut faire pour vous !</p>",
+        "fr" : "<p>En 2004, Spring Framework venait combler de gros manques dans J2EE en apportant simplicité, légèreté, facilité pour tester les composants. Il était un vrai ciment dans un projet et permettait de réduire le code technique.</p><p>Après quelques années où il a fini par s’imposer, JEE a pris le temps d’évoluer, et en 2009, JEE6 est annoncé et intégre CDI, un 'concurrent' à Spring. Un combat de titans’annonçait: d’un coté un standard officiel, de l’autre un standard de fait.</p><p>En 2013, 'Spring' n’est plus seulement le moteur d’injection de dépendance, mais tout un portfolio de projets qui répondent à divers besoin : Intégration de service, processus de batch, gestion de la sécurité, accès aux réseaux sociaux, …</p><p>Venez découvrir ce que le portfolio Spring peut faire pour vous !</p>"
+      },
+      "description" : "spring",
       "speaker": "gcuisinier",
       "location": "laforge",
       "fikket": "le-framework-spring-tout-le-portfolio-par-gildas-cuisinier",
+      "done": true
+    },
+    {
+      "date": {
+        "en": "06/25/2013 7PM",
+        "fr": "25/06/2013 19h00"
+      },
+      "subject": {
+        "en": "Teach kids to code",
+        "fr": "Apprendre aux gosses à programmer"
+      },
+      "title": {
+        "en": "Devoxx 4 Kids",
+        "fr": "Devoxx 4 Kids"
+      },
+      "subtitle":{
+        "en":"",
+        "fr":""
+      },
+      "synopsis": {
+	     	"en" : "",
+		    "fr" : "<p>Partant du simple constat qu'il était difficile de trouver du matériel didactique adapté aux enfants entre 8 et 14 ans sur le sujet de la programmation informatique. Et ce, plus particulièrement dans une langue autre que l'anglais.</p> <p>Désirant montrer à leurs enfants qu'il est possible de faire autre chose de plus attrayant avec un ordinateur que de regarder des vidéos sur Youtube ou de lire des commentaires sur Facebook, certains membres de l'équipe DEVOXX ont commencés à réfléchir en 2012 sur le sujet et ont lancés l'initiative Devoxx4Kids.</p> <p>Devoxx4kids a pour but de permettre aux enfants d'être plus créatifs avec un ordinateur. De leurs faire découvrir la programmation et la logique informatique tout en s'amusant. Pour ce faire l'équipe Devoxx4Kids réalise des sessions durant lesquelles les enfants peuvent développer des jeux, programmer des robots et aussi avoir une introduction à l'électronique. Le tout encadré par des professionnels de l'informatique sur base du volontariat (tout le monde est le bienvenu).</p> <p>Depuis la première édition de Devoxx4Kids en Belgique en 2012 avec une session néerlandaise (Gand) et une version francophone (Bruxelles), plusieurs autres Devoxx4Kids ont vu le jour partout en Europe: France, Hollande, UK et d'autres initiatives identiques réalisées par d'autres JUGs (Java User Group) se sont fait connaître.</p> <p>Tout le matériel didactique est à disposition en mode Open Source sur le site de Devoxx4Kids. N'importe qui, dans son école, son quartier, sa région, son pays peut utiliser le matériel pour ainsi initier des enfants à la programmation informatique.</p>"
+	    },
+	    "description" : "devoxx4kids",
+      "speaker": "devoxx4kids",
+      "location": "laforge",
+      "fikket": "",
       "done": false
     }
 
