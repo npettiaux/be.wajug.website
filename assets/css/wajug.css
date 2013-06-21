@@ -67,7 +67,7 @@ footer h1 {
 }
 
 #sponsors {
-  width: 564px; /* (180+4+4)*2sponsors*/
+  width: 752px; /* (180+4+4)*4sponsors */
   margin: auto;
 }
 
