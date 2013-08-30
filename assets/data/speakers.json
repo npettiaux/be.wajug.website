@@ -1,7 +1,7 @@
 {
   "apetrella" : {
     "twitter": "noootsab",
-    "linkedin": "andypetrella",
+    "linkedin": "in/andypetrella",
     "name": "Andy Petrella",
     "site": "http://nextlab.be",
     "logo": "nextlab.png",
@@ -12,7 +12,7 @@
   },
   "srondal" : {
     "twitter": "stephanerondal",
-    "linkedin": "stephanerondal",
+    "linkedin": "in/stephanerondal",
     "name": "Stephane Rondal",
     "site": "http://www.arexo.be/",
     "logo": "arexo.jpg",
@@ -23,7 +23,7 @@
   },
   "ljanssens" : {
     "twitter": "SustainITBiz",
-    "linkedin": "janssenslaurent",
+    "linkedin": "in/janssenslaurent",
     "name": "Laurent Janssens",
     "site": "http://www.sustain-it.be/",
     "logo": "sustain-it.gif",
@@ -34,7 +34,7 @@
   },
   "bvandermeerssche" : {
     "twitter": "flukso",
-    "linkedin": "bartvandermeerssche",
+    "linkedin": "in/bartvandermeerssche",
     "name": "Bart Van Der Meerssche",
     "site": "http://www.flukso.net",
     "logo": "flukso.png",
@@ -45,7 +45,7 @@
   },
   "gcuisinier" : {
     "twitter": "gcuisinier",
-    "linkedin": "gcuisinier",
+    "linkedin": "in/gcuisinier",
     "name": "Gildas Cuisinier",
     "site": "http://www.gcuisinier.net",
     "logo": "",
@@ -63,6 +63,17 @@
     "bio":{
       "en":"",
       "fr":"<p>Partant du simple constat qu'il était difficile de trouver du matériel didactique adapté aux enfants entre 8 et 14 ans sur le sujet de la programmation informatique (plus particulièrement dans une langue autre que l'anglais) et désirant montrer à leurs enfants qu'il est possible de faire autre chose de plus attrayant avec un ordinateur que de regarder des vidéos sur Youtube ou de lire des commentaires sur Facebook, certains membres de l'équipe Devoxx ont commencés à réfléchir en 2012 sur le sujet et ont lancés l'initiative Devoxx4Kids.</p> <p>Devoxx4Kids a pour but de permettre aux enfants d'être plus créatifs avec un ordinateur. De leurs faire découvrir la programmation et la logique informatique tout en s'amusant.</p> <p>Pour ce faire, l'équipe Devoxx4Kids réalise des sessions durant lesquelles les enfants peuvent développer des jeux, programmer des robots et aussi avoir une introduction à l'électronique. Le tout encadré par des professionnels de l'informatique sur base du volontariat (tout le monde est le bienvenu).</p> <p>Depuis la première édition de Devoxx4Kids en Belgique en 2012 avec une session néerlandaise (Gand) et une version francophone (Bruxelles), plusieurs autres Devoxx4Kids ont vu le jour partout en Europe: France, Hollande, UK et d'autres initiatives identiques réalisées par d'autres JUGs (Java User Group) se sont fait connaître.</p> <p>Tout le matériel didactique est à disposition en mode Open Source sur le site de Devoxx4Kids. N'importe qui, dans son école, son quartier, sa région, son pays peut utiliser le matériel pour ainsi initier des enfants à la programmation informatique.</p>"
+    }
+  },
+  "Davy De Waele" : {
+    "twitter": "ddewaele",
+    "linkedin": "pub/davy-de-waele/5/529/571/",
+    "name": "Davy De Waele"
+    "site": " http://ddewaele.github.io/GoogleMapsV2WithActionBarSherlock",
+    "logo": null,
+    "bio":{
+      "en":"<p>Belgium based Senior Application Architect / Developer. Strong focus on Java and a broad interest in various functional and technical domains. Started as an enterprise developer, transitioned into more architectural roles and lately focussing more on mobile and frontend technologies. Javascript nina-wanna-be</p>",
+      "fr":""
     }
   }
 }
